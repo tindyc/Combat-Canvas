@@ -54,7 +54,7 @@
   
   .header__menuItem > a {
     color: var(--color-light);
-    font-weight: 300;
+    font-weight: 600;
   }
   
   .toggle-menu > span {

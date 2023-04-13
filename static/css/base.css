@@ -138,3 +138,19 @@
     }
   }
   
+/*Home Page*/
+.home-description {
+  display: flex;
+  justify-content: center;
+}
+ /*Two Columns to add pictures*/
+.home-contents-container {
+  display: flex;
+  flex-flow: column;
+  columns: 2;
+}
+
+.user-quote {
+  display: flex;
+  justify-content: center;
+}

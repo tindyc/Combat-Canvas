@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<h1> Gallery template</h1>
+
+<ul>
+    {% for project in projects %}
+    <li>Title: <a href="{% url 'project' project.id %}">{{project.title}}</a> -- {{project.description}}</li>
+    {% endfor %}
+</ul>
+
+{%endblock content %}

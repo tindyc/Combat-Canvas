@@ -53,13 +53,13 @@ def registerUser(request):
             
             messages.success(request, 'User account was created!')
 
-            login(request,user)
+            login(request, user)
             return redirect('edit-account')
         
         else:
             messages.error(request, 'An error has occured during registration')
 
-    context = {'page':page, 'form':form}
+    context = {'page': page, 'form': form}
     return render(request, 'users/login_register.html', context)
 
 
@@ -67,7 +67,7 @@ def profiles(request):
     profiles, search_query = searchProfiles(request)
 
     custom_range, profiles = paginateProfiles(request, profiles, 3)
-    context = {'profiles':profiles, 'search_query':search_query, 'custom_range':custom_range}
+    context = {'profiles': profiles, 'search_query': search_query, 'custom_range':custom_range}
     return render(request, 'users/profiles.html', context)
 
 

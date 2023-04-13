@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3q2$uw*+n&@^qbrvq1(a-r(&ym_kpsyo4n=-ep5hq66z%h-n@*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '8000-tindyc-combat-canvas-z9nn0nzluz.us2.codeanyapp.com']
 
 
 # Application definition

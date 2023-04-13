@@ -843,3 +843,48 @@
   
     z-index: 99999;
   }
+
+  /*=======================
+    Footer
+  ========================*/
+  footer {
+    background-color: #93A1C8;
+    color: #161412;
+  }
+
+  footer a {
+    color: #161412;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  footer a:hover {
+    transform: translateY(-4px);  
+    color: #161412;
+  }
+
+  .social-icon {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  #footer-logo {
+    padding-top: 1.5rem;
+    max-width: 250px;
+  }
+
+  #disclaimer {
+    font-size: 1.2rem;
+    color: #161412;
+  }
+
+  .github-icons {
+    font-size: 3rem;
+    padding: 0px 15px;
+  }

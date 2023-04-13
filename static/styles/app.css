@@ -261,33 +261,33 @@
     Veterans
   ========================*/
   
-  .devlist {
+  .userlist {
     margin-top: 8rem;
   }
   
-  .devlist .grid {
+  .userlist .grid {
     align-items: stretch;
   }
   
-  .devlist .dev .dev__profile {
+  .userlist .user .user__profile {
     display: flex;
     align-items: center;
     gap: 1.5rem;
   }
   
-  .devlist .dev .dev__meta h3 {
+  .list .user .user__meta h3 {
     color: var(--color-sub);
     font-size: 2rem;
     font-weight: 700;
   }
   
-  .devlist .dev .dev__meta h5 {
+  .userlist .user .user__meta h5 {
     color: var(--color-text);
     font-size: 1.4rem;
     font-weight: 500;
   }
   
-  .devlist .dev .dev__info {
+  .userlist .dev .user__info {
     margin: 1.5rem 0;
     font-size: 1.35rem;
     line-height: 1.4;

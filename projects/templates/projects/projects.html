@@ -23,7 +23,7 @@
             </div>
         </div>
     </section>
-    <!-- Search Result: DevList -->
+    <!-- Search Result: VeteranList -->
     <section class="projectsList">
         <div class="container">
             <div class="grid grid--three">
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-
+    {% include 'pagination.html' with queryset=projects custom_range=custom_range %}
 
 </main>
 

@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'projects.apps.ProjectsConfig',
     'users.apps.UsersConfig',
     'contact.apps.ContactConfig',
+
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -136,6 +138,19 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_QUERYSTRING_AUTH = False
+AWS_S3_FILE_OVERWRITE = False
+
+
+AWS_ACCESS_KEY_ID = 'AKIAXSRZHWTBCQTESZW7'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'combat-canvas'
+AWS_S3_REGION_NAME = "eu-west-2"
+
+AWS_S3_SIGNATURE_VERSION = "s3v4"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -145,3 +160,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-h3yl4utsqhi.ws-eu94.gitpod.io']
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_VERIFICATION = "none"
+
+

@@ -4,4 +4,38 @@
 
 <h1>Contact Page</h1>
 
+<div class="form-container-outer">
+    <div class="form-container-mid">
+        <div class="form-container">
+            <form action="" method="post" class="contact-form">
+                <legend>Sign up</legend>
+                <div class="form-control">
+                    <label for="full-name">Full name <span class="required-field">*</span></label>
+                    <input type="text" id="full-name" name="full_name" class="text-input" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email Address <span class="required-field">*</span></label>
+                    <input type="email" id="email" name="email_address" class="text-input" required>
+                </div>
+                <div class="form-control">
+                    <label for="subject">Subject <span class="required-field">*</span></label>
+                    <input type="text" id="subject" name="subject_form" class="text-input subject" required>
+                </div>
+                <div class="form-control">
+                    <label for="comments">Comments <span class="required-field">*</span></label>
+                    <textarea id="comments" cols="20" rows="5" maxlength="500" name="commnents_form"
+                        class="text-input" required></textarea>
+                </div>
+                <div id="required-field-bottom">
+                    <span class="required-field">*</span> Required fields
+                </div>
+                <div>
+                    <input type="submit" value="Send" class="send-button">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

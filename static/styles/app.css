@@ -1055,6 +1055,11 @@ margin-right: 10%;
   max-width: 25%;
 }
 
+.projects-button {
+display: flex;
+justify-content: center;
+}
+
 /*Media Queries for the home page*/
 
 @media screen and (max-width: 400px) {

@@ -143,6 +143,7 @@
   display: flex;
   justify-content: center;
 }
+
  /*Two Columns to add pictures*/
 .home-contents-container {
   display: flex;
@@ -153,4 +154,9 @@
 .user-quote {
   display: flex;
   justify-content: center;
+}
+
+.contents-img {
+  max-width: 40%;
+  max-width: 30%;
 }

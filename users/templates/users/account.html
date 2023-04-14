@@ -6,74 +6,67 @@
 <main class="settingsPage profile my-md">
   <div class="container">
     <div class="account-layout">
-      <div class="column column--1of3">
-        <div class="card text-center">
-          <div class="card__body user">
-            <a class="tag tag--pill tag--main settings__btn" href="{% url 'edit-account' %}"><i class="im im-edit"></i>
-              Edit</a>
-            <img class="avatar avatar--xl user__avatar" src="{{profile.imageURL}}" />
-            <h2 class="user__name">{{profile.name}}</h2>
-            <p class="user__title">{{profile.short_into}}</p>
-            <p class="user__location">Based in {{profile.location}}</p>
+      <div class="account-about-con">
+        <div class="column column--1of3">
+          <div class="card text-center">
+            <div class="card__body user">
+              <a class="tag tag--pill tag--main settings__btn" href="{% url 'edit-account' %}"><i class="im im-edit"></i>
+                Edit</a>
+              <img class="avatar avatar--xl user__avatar" src="{{profile.imageURL}}" />
+              <h2 class="user__name  account-mobile-mode">{{profile.name}}</h2>
+              <p class="user__title">{{profile.short_into}}</p>
+              <p class="user__location">Based in {{profile.location}}</p>
 
-            <ul class="user__social">
+              <ul class="user__social">
 
-              {% if profile.social_twitter %}
-              <li>
-                  <a title="Twitter" href="{{profile.social_twitter}}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              {% endif %}
+                {% if profile.social_twitter %}
+                <li>
+                    <a title="Twitter" href="{{profile.social_twitter}}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                {% endif %}
 
-              {% if profile.social_linkedin %}
-              <li>
-                  <a title="LinkedIn" href="{{profile.social_linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              {% endif %}
+                {% if profile.social_linkedin %}
+                <li>
+                    <a title="LinkedIn" href="{{profile.social_linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                {% endif %}
 
-              {% if profile.social_website %}
-              <li>
-                  <a title="Personal Website" href="{{profile.social_website}}" target="_blank"><i class="fa-solid fa-globe"></i></a>
-              </li>
-              {% endif %}
+                {% if profile.social_website %}
+                <li>
+                    <a title="Personal Website" href="{{profile.social_website}}" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                </li>
+                {% endif %}
 
-            </ul>
+              </ul>
 
+            </div>
+          </div>
+        </div>
+        <div class="column column--2of3">
+          <div class="userInfo">
+            <h2 class="user__name account-desktop-mode">{{profile.name}}</h2>
+            <h2 class="userInfo__title account-mobile-mode">About Me</h2>
+            <p class="userInfo__about">{{profile.bio}}</p>
           </div>
         </div>
       </div>
-      <div class="column column--2of3">
-        <div class="userInfo">
-          <h3 class="userInfo__title">About Me</h3>
-          <p class="userInfo__about">{{profile.bio}}</p>
-        </div>
-
+      <div class="account-projects-con">
         <div class="settings">
-          <h3 class="settings__title">Projects</h3>
+          <h2 class="settings__title">Projects</h2>
           <a class="tag tag--pill tag--sub settings__btn tag--lg" href="{% url 'create-project' %}"><i
               class="im im-plus"></i> Add Project</a>
         </div>
-
-        <table class="settings__table">
+        <div class="my-projects-container">
           {% for project in projects %}
-          <tr>
-            <td class="settings__thumbnail">
+          <div class="project-card">
+            <a href="{% url 'project' project.id %}">{{project.title}}</a>
+            <div class="project-card-info">
               <a href="{% url 'project' project.id %}"><img src="{{project.imageURL}}" alt="Project Thumbnail" /></a>
-            </td>
-            <td class="settings__tableInfo">
-              <a href="{% url 'project' project.id %}">{{project.title}}</a>
               <p>{{project.description|slice:"150"}}</p>
-            </td>
-            <td class="settings__tableActions">
-              <a class="tag tag--pill tag--main settings__btn" href="{% url 'update-project' project.id %}"><i
-                  class="im im-edit"></i> Edit</a>
-              <a class="tag tag--pill tag--main settings__btn"
-                href="{% url 'delete-project'  project.id %}?next=/account"><i class="im im-x-mark-circle-o"></i>
-                Delete</a>
-            </td>
-          </tr>
+            </div>
+          </div>
           {% endfor %}
-
-        </table>
+        </div>
       </div>
     </div>
   </div>

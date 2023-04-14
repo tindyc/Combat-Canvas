@@ -328,19 +328,31 @@
   .profile .card > .dev {
     padding: 4rem;
   }
+
+  .column--2of3 {
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+  }
   
   .user__avatar {
     display: block;
     margin: auto;
   }
+
+  .account-mobile-mode {
+    display: none;
+  }
   
   .user__name {
     color: var(--color-sub);
-    font-size: 2.8rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: 'oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .user__title {
@@ -364,6 +376,12 @@
   
   .userInfo {
     margin-bottom: 3rem;
+    align-self: center;
+  }
+
+  .userInfo__title, .settings__title {
+    font-family: 'oswald', sans-serif;
+    text-align: center;
   }
 
   .userInfo__title, .settings__title {
@@ -390,8 +408,6 @@
     text-align: justify;
   }
   
-
-  
   /*=======================
     Single Projects
   ========================*/
@@ -409,6 +425,10 @@
     }
   }
   
+  .account-projects-con {
+    padding: 2rem 2.5rem;
+  }
+
   .singleProject__toolStack {
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -553,10 +573,23 @@
   ========================*/
   .account-layout{
     flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .card {
+    border: none;
+  }
+
   .settingsPage .dev > .settings__btn {
     display: inline-block;
     margin-bottom: 3rem;
+  }
+
+  .account-about-con {
+    display: flex;
+    flex-direction: row;
   }
   
   .settings {
@@ -621,6 +654,62 @@
   
   .settings__tableActions {
     text-align: right;
+  }
+
+  .my-projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card, .project-card-info a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card a {
+    font-size: 3em;
+  }
+
+  .project-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card-info p {
+    padding: 2rem 2.5rem;
+    flex: 20%;
+  }
+
+  /*=======================
+    Media Styles ofr Profile Page
+  ========================*/
+
+  @media screen and (max-width: 767px) {
+    .account-mobile-mode {
+      display: block;
+    }
+
+    .account-desktop-mode {
+      display: none;
+    }
+
+    .account-about-con {
+      flex-direction: column;
+    }
+
+    .userInfo__title {
+      text-align: left;
+    }
+
+    .my-projects-container {
+      grid-template-columns: 1fr;
+    }
   }
   
   /*=======================

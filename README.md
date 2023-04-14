@@ -42,5 +42,13 @@ The initial draft of the wireframe was based on how user can navigate each page 
 
  *Click link below to open wireframes* 
 
-* [**Combat Canvas Home page** ] (https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/combat%20canvas%20homepage.png)
+* [**Combat Canvas Home page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/combat%20canvas%20homepage.png)
 
+* [**Combat Canvas signup page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/combat-canvas-signup.png)
+* [**Combat Canvas Home page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/combat%20canvas%20homepage.png)
+* [**Gallery page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Gallery%20page%20.png)
+* [**Desktop login  page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Login%20Page%20.png)
+* [**Desktop Logout page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Logout.png)
+* [**Mobile login page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Login.png)
+* [**Mobile logout page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Logout.png)
+* [**Veterans profile page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Veterans%20profile%20page%20.png)

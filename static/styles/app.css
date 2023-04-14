@@ -383,6 +383,10 @@
     font-family: 'oswald', sans-serif;
     text-align: center;
   }
+
+  .userInfo__title, .settings__title {
+    font-family: 'oswald', sans-serif;
+  }
   
   .userInfo__title,
   .userInfo__subtitle {

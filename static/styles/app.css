@@ -2,632 +2,641 @@
 
 :root {
     --color-sub: #2d2d39;
-  }
-  
-  .btn--sub {
+}
+
+.btn--sub {
     background-color: var(--color-sub-light);
-  }
-  
-  .card {
+}
+
+.card {
     border: 2px solid var(--color-light);
-  }
-  
-  img {
+}
+
+img {
     width: 100%;
-  }
-  
-  .tag > i.im {
+}
+
+.tag>i.im {
     font-size: 1.5rem;
     margin-right: 0.5rem;
-  }
-  
-  .content-box {
+}
+
+.content-box {
     width: 95%;
     max-width: 85rem;
     margin: 0 auto;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Header Section
   ========================*/
-  .header {
+.header {
     position: sticky;
     z-index: 111;
     background-color: var(--color-sub);
     padding: 1.5rem 0;
-  }
-  
-  .header > .container {
+}
+
+.header>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .header__logo > img {
+}
+
+.header__logo>img {
     height: 3.8rem;
-  }
-  
-  .header__nav > ul {
+}
+
+.header__nav>ul {
     display: inline-flex;
     align-items: center;
     list-style: none;
     gap: 6.5rem;
-  }
-  
-  .header__menuItem > a {
+}
+
+.header__menuItem>a {
     color: var(--color-light);
     font-weight: 600;
-  }
-  
-  .toggle-menu > span {
+}
+
+.toggle-menu>span {
     display: none;
-  }
-  
-  .header__nav input[type='checkbox'] {
+}
+
+.header__nav input[type='checkbox'] {
     display: none;
-  }
-  
-  .header__nav input[type='checkbox']:checked ~ .header__menu {
+}
+
+.header__nav input[type='checkbox']:checked~.header__menu {
     opacity: 1;
     pointer-events: all;
-  }
-  
-  .project--thumbnail {
+}
+
+.project--thumbnail {
     height: 250px;
     object-fit: cover;
-  }
-  
-  @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
     .header__logo {
-      position: relative;
-      z-index: 999;
+        position: relative;
+        z-index: 999;
     }
+
     .toggle-menu {
-      position: relative;
+        position: relative;
     }
-  
-    .toggle-menu > span {
-      display: block;
-      position: fixed;
-      top: 1.5rem;
-      right: 2.75rem;
-      cursor: pointer;
-      padding: 1rem;
-      background: var(--color-sub-light);
-      z-index: 999;
-      font-size: 0;
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
+
+    .toggle-menu>span {
+        display: block;
+        position: fixed;
+        top: 1.5rem;
+        right: 2.75rem;
+        cursor: pointer;
+        padding: 1rem;
+        background: var(--color-sub-light);
+        z-index: 999;
+        font-size: 0;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
     }
-  
+
     .toggle-menu__lines,
     .toggle-menu__lines::before,
     .toggle-menu__lines::after {
-      pointer-events: none;
-      content: '';
-      display: block;
-      height: 2px;
-      width: 2.5rem;
-      position: fixed;
-      top: 4rem;
-      right: 4rem;
-      z-index: 999;
-      background: var(--color-light);
-      transition: all 0.3s ease-in-out;
+        pointer-events: none;
+        content: '';
+        display: block;
+        height: 2px;
+        width: 2.5rem;
+        position: fixed;
+        top: 4rem;
+        right: 4rem;
+        z-index: 999;
+        background: var(--color-light);
+        transition: all 0.3s ease-in-out;
     }
-  
+
     .toggle-menu__lines::before {
-      top: 3.4rem;
-      transform-origin: 0 0;
+        top: 3.4rem;
+        transform-origin: 0 0;
     }
+
     .toggle-menu__lines::after {
-      top: 4.6rem;
-      transform-origin: 0 0;
+        top: 4.6rem;
+        transform-origin: 0 0;
     }
-  
-    .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines::before {
-      margin-left: 3px;
-      transform: rotate(45deg) scaleX(1.2) translateX(-2px) translateY(-4px);
-      visibility: visible;
+
+    .header__nav input[type='checkbox']:checked+.toggle-menu>.toggle-menu__lines::before {
+        margin-left: 3px;
+        transform: rotate(45deg) scaleX(1.2) translateX(-2px) translateY(-4px);
+        visibility: visible;
     }
-  
-    .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines {
-      visibility: hidden;
+
+    .header__nav input[type='checkbox']:checked+.toggle-menu>.toggle-menu__lines {
+        visibility: hidden;
     }
-  
-    .header__nav input[type='checkbox']:checked + .toggle-menu > .toggle-menu__lines::after {
-      transform: rotate(-45deg) scaleX(1.2) translateX(-2px) translateY(3px);
-      visibility: visible;
+
+    .header__nav input[type='checkbox']:checked+.toggle-menu>.toggle-menu__lines::after {
+        transform: rotate(-45deg) scaleX(1.2) translateX(-2px) translateY(3px);
+        visibility: visible;
     }
-  
-    .header__nav > ul {
-      opacity: 0;
-      pointer-events: none;
-      flex-direction: column;
-      justify-content: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background: var(--color-sub);
-      transition: all 0.5s ease-in-out;
+
+    .header__nav>ul {
+        opacity: 0;
+        pointer-events: none;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: var(--color-sub);
+        transition: all 0.5s ease-in-out;
     }
-  
+
     .header__menuItem a {
-      transition: all 0.5s ease-in-out;
-      padding: 1rem 3rem;
+        transition: all 0.5s ease-in-out;
+        padding: 1rem 3rem;
     }
-  
+
     .header__menuItem a:hover {
-      padding: 1rem 3rem;
-      border-radius: 3px;
-      background: var(--color-sub-light);
+        padding: 1rem 3rem;
+        border-radius: 3px;
+        background: var(--color-sub-light);
     }
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Hero Section
   ========================*/
-  
-  .hero-section {
+
+.hero-section {
     height: 40vh;
     display: flex;
     align-items: center;
     background-color: var(--color-sub);
-  }
-  
-  .hero-section__box {
+}
+
+.hero-section__box {
     margin-bottom: 4rem;
-  }
-  
-  .hero-section__box > h2,
-  .hero-section__box > h2 > span {
+}
+
+.hero-section__box>h2,
+.hero-section__box>h2>span {
     font-size: 4rem;
     color: var(--color-light);
     line-height: 1.3;
     text-transform: uppercase;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .hero-section__box > h2,
-    .hero-section__box > h2 > span {
-      font-size: 3.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hero-section__box>h2,
+    .hero-section__box>h2>span {
+        font-size: 3.4rem;
     }
-  }
-  
-  @media screen and (max-width: 800px) {
-    .hero-section__box > h2,
-    .hero-section__box > h2 > span {
-      font-size: 3rem;
-      line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+
+    .hero-section__box>h2,
+    .hero-section__box>h2>span {
+        font-size: 3rem;
+        line-height: 1.5;
     }
-  }
-  
-  @media screen and (max-width: 500px) {
-    .hero-section__box > h2,
-    .hero-section__box > h2 > span {
-      font-size: 2.4rem;
-      line-height: 1.5;
+}
+
+@media screen and (max-width: 500px) {
+
+    .hero-section__box>h2,
+    .hero-section__box>h2>span {
+        font-size: 2.4rem;
+        line-height: 1.5;
     }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .hero-section__box > h2,
-    .hero-section__box > h2 > span {
-      font-size: 2rem;
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero-section__box>h2,
+    .hero-section__box>h2>span {
+        font-size: 2rem;
     }
-  }
-  
-  .hero-section__box > h2 {
+}
+
+.hero-section__box>h2 {
     font-weight: 300;
-  }
-  
-  .hero-section__box > h2 > span {
+}
+
+.hero-section__box>h2>span {
     font-weight: 700;
-  }
-  
-  .hero-section__search > .form {
+}
+
+.hero-section__search>.form {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-  }
-  
-  .hero-section__search > .form label {
+}
+
+.hero-section__search>.form label {
     position: absolute;
     left: -9999px;
-  }
-  
-  .hero-section__search > .form input.input--text {
+}
+
+.hero-section__search>.form input.input--text {
     width: 50rem;
-  }
-  
-  @media screen and (max-width: 700px) {
-    .hero-section__search > .form {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      align-items: stretch;
+}
+
+@media screen and (max-width: 700px) {
+    .hero-section__search>.form {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: stretch;
     }
-  
-    .hero-section__search > .form input.input--text,
-    .hero-section__search > .form input {
-      min-width: 100%;
-      width: 100%;
+
+    .hero-section__search>.form input.input--text,
+    .hero-section__search>.form input {
+        min-width: 100%;
+        width: 100%;
     }
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Veterans
   ========================*/
-  
-  .userlist {
+
+.userlist {
     margin-top: 8rem;
-  }
-  
-  .userlist .grid {
+}
+
+.userlist .grid {
     align-items: stretch;
-  }
-  
-  .userlist .user .user__profile {
+}
+
+.userlist .user .user__profile {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-  }
-  
-  .list .user .user__meta h3 {
+}
+
+.list .user .user__meta h3 {
     color: var(--color-sub);
     font-size: 2rem;
     font-weight: 700;
-  }
-  
-  .userlist .user .user__meta h5 {
+}
+
+.userlist .user .user__meta h5 {
     color: var(--color-text);
     font-size: 1.4rem;
     font-weight: 500;
-  }
-  
-  .userlist .dev .user__info {
+}
+
+.userlist .dev .user__info {
     margin: 1.5rem 0;
     font-size: 1.35rem;
     line-height: 1.4;
     text-align: justify;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Pagination
   ========================*/
-  .pagination {
+.pagination {
     margin-top: 8rem;
     margin-bottom: 10rem;
-  }
-  
-  .pagination > ul {
+}
+
+.pagination>ul {
     flex-wrap: wrap;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-  }
-  
-  .pagination .btn {
+}
+
+.pagination .btn {
     color: var(--color-sub);
-  }
-  
-  .pagination .btn.btn--sub {
+}
+
+.pagination .btn.btn--sub {
     color: var(--color-light);
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Profile
   ========================*/
-  
-  .profile .card > .dev {
+
+.profile .card>.dev {
     padding: 4rem;
-  }
-  
-  .user__avatar {
+}
+
+.user__avatar {
     display: block;
     margin: auto;
-  }
-  
-  .user__name {
+}
+
+.user__name {
     color: var(--color-sub);
     font-size: 2.8rem;
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: 'oswald', sans-serif;
-  }
-  
-  .user__title {
+}
+
+.user__title {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.3;
-  }
-  
-  .user__location {
+}
+
+.user__location {
     margin-top: 1rem;
-  }
-  
-  .user__social {
+}
+
+.user__social {
     margin: 3rem 0;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     font-size: 2em;
-  }
-  
-  .userInfo {
-    margin-bottom: 3rem;
-  }
+}
 
-  .userInfo__title, .settings__title {
+.userInfo {
+    margin-bottom: 3rem;
+}
+
+.userInfo__title,
+.settings__title {
     font-family: 'oswald', sans-serif;
-  }
-  
-  .userInfo__title,
-  .userInfo__subtitle {
+}
+
+.userInfo__title,
+.userInfo__subtitle {
     font-size: 2.6rem;
     color: var(--color-sub);
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 1.5rem;
-  }
-  
-  .userInfo__subtitle {
+}
+
+.userInfo__subtitle {
     font-size: 2rem;
     color: var(--color-sub-light);
-  }
-  
-  .userInfo__about {
+}
+
+.userInfo__about {
     font-size: 1.45rem;
     line-height: 1.7;
     text-align: justify;
-  }
-  
+}
 
-  
-  /*=======================
+
+
+/*=======================
     Single Projects
   ========================*/
-  
-  .singleProject .column--1of3 {
+
+.singleProject .column--1of3 {
     order: 2;
-  }
-  
-  @media screen and (min-width: 1081px) {
+}
+
+@media screen and (min-width: 1081px) {
     .singleProject .column--1of3 {
-      order: 1;
+        order: 1;
     }
+
     .singleProject .column--2of3 {
-      order: 2;
+        order: 2;
     }
-  }
-  
-  .singleProject__toolStack {
+}
+
+.singleProject__toolStack {
     margin-top: 2rem;
     margin-bottom: 4rem;
-  }
-  
-  .singleProject__liveLink {
+}
+
+.singleProject__liveLink {
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
-  }
-  
-  .singleProject__liveLink:hover {
+}
+
+.singleProject__liveLink:hover {
     font-weight: 500;
     border-bottom: 2px solid var(--color-main);
-  }
-  
-  .singleProject__liveLink i {
+}
+
+.singleProject__liveLink i {
     display: inline-block;
     font-size: 1.6rem;
     margin-right: 1rem;
-  }
-  
-  .singleProject__preview {
+}
+
+.singleProject__preview {
     height: 50vh;
     object-fit: cover;
     object-position: top center;
     margin-bottom: 3rem;
     border-radius: 0.7rem;
-  }
-  
-  .singleProject__developer {
+}
+
+.singleProject__developer {
     font-size: 1.8rem;
     font-weight: 500;
-  }
-  
-  .singleProject__title {
+}
+
+.singleProject__title {
     font-size: 3.6rem;
     font-weight: 700;
     color: var(--color-sub);
     margin-bottom: 3rem;
-  }
-  
-  .project__author{
+}
+
+.project__author {
     font-size: 1.4rem;
     font-style: italic;
-  }
-  
-  .project--rating{
+}
+
+.project--rating {
     margin-bottom: 1.6em;
     margin-top: .5em;
-  }
-  
-  .singleProject__subtitle {
+}
+
+.singleProject__subtitle {
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--color-sub-light);
     margin-bottom: 1rem;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Projects Page
   ========================*/
-  .projects > .hero-section {
+.projects>.hero-section {
     background: var(--color-sub-lighter);
     height: 30vh;
-  }
-  
-  .projects .hero-section__box {
+}
+
+.projects .hero-section__box {
     margin-bottom: 2.5rem;
-  }
-  
-  .projects .hero-section__box > h2 {
+}
+
+.projects .hero-section__box>h2 {
     color: var(--color-sub);
-  }
-  
-  .projects .hero-section__box > h2 > span {
+}
+
+.projects .hero-section__box>h2>span {
     font-weight: 700;
     color: var(--color-sub);
-  }
-  
-  .projectsList {
+}
+
+.projectsList {
     margin-top: 8rem;
-  }
-  
-  /*========== Projects ==========*/
-  
-  .project__thumbnail {
+}
+
+/*========== Projects ==========*/
+
+.project__thumbnail {
     height: 25rem;
     object-fit: cover;
     object-position: top center;
-  }
-  
-  .project__title {
+}
+
+.project__title {
     font-size: 2rem;
     font-weight: 700;
     color: var(--color-sub);
-  }
-  
-  .project__info {
+}
+
+.project__info {
     margin: 1rem 0;
     font-size: 1.4rem;
     text-align: justify;
-  }
-  
-  /*========== Comments ==========*/
-  
-  .comments {
+}
+
+/*========== Comments ==========*/
+
+.comments {
     margin-top: 4rem;
     padding-top: 3rem;
     border-top: 2px solid var(--color-light);
-  }
-  
-  .comments .form label {
+}
+
+.comments .form label {
     position: absolute;
     margin: -9999px;
-  }
-  
-  .commentList {
+}
+
+.commentList {
     margin: 3rem 0;
-  }
-  
-  .comment {
+}
+
+.comment {
     display: flex;
     gap: 2rem;
-  }
-  
-  .comment:not(:last-child) {
+}
+
+.comment:not(:last-child) {
     margin-bottom: 3rem;
-  }
-  
-  .comment__author {
+}
+
+.comment__author {
     font-size: 1.8rem;
-  }
-  
-  .comment__info {
+}
+
+.comment__info {
     font-size: 1.45rem;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Account Settings
   ========================*/
-  .account-layout{
+.account-layout {
     flex-wrap: nowrap;
-  }
-  .settingsPage .dev > .settings__btn {
+}
+
+.settingsPage .dev>.settings__btn {
     display: inline-block;
     margin-bottom: 3rem;
-  }
-  
-  .settings {
+}
+
+.settings {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .settings__title {
+}
+
+.settings__title {
     font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: 700;
     color: var(--color-sub);
-  }
-  
-  .settings__table {
+}
+
+.settings__table {
     margin-top: 3rem;
     margin-bottom: 5rem;
     padding: 0 3rem;
     background: var(--color-white);
-  }
-  
-  .settings__table tr {
+}
+
+.settings__table tr {
     width: 100%;
-  }
-  
-  .settings__table tr > td {
+}
+
+.settings__table tr>td {
     padding: 2rem 0;
-  }
-  
-  .settings__table tr:not(:last-child) td {
+}
+
+.settings__table tr:not(:last-child) td {
     border-bottom: 2px solid var(--color-white-light);
-  }
-  
-  .settings__thumbnail {
+}
+
+.settings__thumbnail {
     width: 23%;
     min-width: 10rem;
-  }
-  
-  .settings__thumbnail img {
+}
+
+.settings__thumbnail img {
     padding-right: 3rem;
     height: 15rem;
     object-fit: contain;
-  }
-  
-  .settings__tableInfo{
+}
+
+.settings__tableInfo {
     width: 100%;
-  }
-  
-  .settings__tableInfo h4,
-  .settings__tableInfo a {
+}
+
+.settings__tableInfo h4,
+.settings__tableInfo a {
     padding-right: 1rem;
     width: auto;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--color-sub);
-  }
-  
-  .settings__tableInfo p {
+}
+
+.settings__tableInfo p {
     font-size: 1.4rem;
-  }
-  
-  .settings__tableActions {
+}
+
+.settings__tableActions {
     text-align: right;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Login/SignUp
   ========================*/
-  
-  .auth {
+
+.auth {
     width: 100%;
     position: relative;
     z-index: 1;
@@ -636,9 +645,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .auth::after {
+}
+
+.auth::after {
     z-index: -1;
     opacity: 0.1;
     content: '';
@@ -649,243 +658,266 @@
     bottom: 0;
     right: 0;
     background: url(../images/pattern.jpg);
-  }
-  
-  .auth > .card {
+}
+
+.auth>.card {
     padding: 3rem 4rem;
     width: 95%;
     max-width: 65rem;
-  }
-  
-  @media screen and (min-width: 650px) {
-    .auth > .card {
-      padding: 5rem 8rem;
-      width: 95%;
-      max-width: 65rem;
+}
+
+@media screen and (min-width: 650px) {
+    .auth>.card {
+        padding: 5rem 8rem;
+        width: 95%;
+        max-width: 65rem;
     }
-  }
-  
-  .auth__header h3 {
+}
+
+.auth__header h3 {
     color: var(--color-sub);
     font-weight: 700;
     margin-top: 1rem;
-  }
-  
-  .auth__header p {
+}
+
+.auth__header p {
     font-weight: 400;
     font-size: 1.8rem;
     margin-bottom: 2rem;
-  }
-  
-  .auth__form {
+}
+
+.auth__form {
     margin: 3rem 0;
-  }
-  
-  .auth .auth__form label,
-  .auth .auth__alternative p {
+}
+
+.auth .auth__form label,
+.auth .auth__alternative p {
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--color-sub-light);
-  }
-  
-  .auth .auth__actions {
+}
+
+.auth .auth__actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 2.5rem 0;
-  }
-  .auth .auth__actions a {
+}
+
+.auth .auth__actions a {
     text-decoration: underline;
-  }
-  
-  .auth .auth__alternative a {
+}
+
+.auth .auth__alternative a {
     font-size: 2rem;
     font-weight: 500;
-  }
+}
 
-  /*=======================
+/*=======================
     Contact Form
   ========================*/
+fieldset {
+    border: none;
+}
 
-  legend {
-    margin-bottom: 10px;
+legend {
     text-align: center;
+    margin-top: 10px;
 }
 
-.form-container-mid {    
-    display: flex;
-    justify-content: center;    
+
+#contact-form-logo {
+width: 50%;
+margin:auto;
 }
 
-.form-container {
-    margin: 20px 0;
+.contact-form-container-outer {
+    margin: 75px 0;
+}
+
+.contact-form-container-inner {
     display: flex;
     justify-content: center;
-    flex-basis: 100%;   
 }
 
-.contact-form {    
+.contact-form-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+}
+
+.contact-form {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
+    flex: 1;
     font-weight: 600;
     border-radius: 2rem;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
-    /* color: #1B264F; */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.form-control {
+.contact-form-control {
     display: flex;
     flex-direction: column;
-    flex: 1;    
+    max-width: 50%;
+    margin: auto;
 }
 
-.form-control input {
-    font-size: 100%;    
+.contact-form-control input {
+    font-size: 100%;
 }
 
-.form-control label {
-    padding: 5px 0;
+.contact-form-control label {
+    padding: 1rem 0 0.2rem 0;
 }
 
-.text-input {
+.contact-text-input {
     border-radius: 5px;
-    border: 2px inset #1B264F;
+    border: 1px solid #1B264F;
     line-height: 2;
     font-family: 'Oswald Heavy', 'Merriweather Sans', sans-serif;
-    font-size: 100%;    
+    font-size: 100%;
 }
 
-.required-field {
+.contact-required-field {
     color: red;
     font-size: 80%;
 }
 
 .send-button {
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 1rem;
     background-color: #1B264F;
     color: #F5F3F5;
     padding: 5px 15px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-#required-field-bottom {
-    margin-top: 5px;
+.required-field-bottom {
+    margin-top: 0.5rem;
     font-size: 70%;
 }
 
-@media screen and (max-width:400px) {
-    .contact-form {
-        flex-basis: 100%;
-    }
+@media screen and (max-width:1024px) {
+    .contact-form-container {
+        flex-basis: 60%;
+     }
 }
 
 @media screen and (max-width:820px) {
-    .contact-form {
-        flex-basis: 70%;
+    .contact-form-container {
+       flex-basis: 80%;
     }
 }
-  
-  /*=======================
+
+@media screen and (max-width:450px) {
+    .contact-form-container {
+        flex-basis: 100%;
+    }
+    .contact-form-control {
+        max-width: 80%;
+    }
+}
+
+/*=======================
     Inbox
   ========================*/
-  
-  .inbox {
+
+.inbox {
     height: 90vh;
-  }
-  
-  .inbox__title,
-  .inbox__title span {
+}
+
+.inbox__title,
+.inbox__title span {
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--color-sub);
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 3rem;
-  }
-  
-  .inbox__title span {
+}
+
+.inbox__title span {
     color: var(--color-main);
-  }
-  
-  .messages {
+}
+
+.messages {
     list-style: none;
     background: var(--color-white);
     padding: 0.5rem 3rem;
     border: 2px solid var(--color-light);
     border-radius: 0.7rem;
-  }
-  
-  .message {
+}
+
+.message {
     padding: 2.5rem 0;
-  }
-  
-  .message > a span {
+}
+
+.message>a span {
     font-size: 1.45rem;
     font-weight: 500;
-  }
-  
-  .message.message--unread a span {
+}
+
+.message.message--unread a span {
     font-weight: 700;
     color: var(--color-sub);
-  }
-  
-  .message:not(:last-child) {
+}
+
+.message:not(:last-child) {
     border-bottom: 2px solid var(--color-white-light);
-  }
-  
-  .message > a {
+}
+
+.message>a {
     display: flex;
     gap: 1rem;
-  }
-  
-  .message__author,
-  .message__date {
+}
+
+.message__author,
+.message__date {
     flex-basis: 25%;
-  }
-  
-  .message__subject {
+}
+
+.message__subject {
     flex-basis: 50%;
-  }
-  
-  .message__date {
+}
+
+.message__date {
     text-align: right;
-  }
-  
-  /*=======================
+}
+
+/*=======================
     Single Message
   ========================*/
-  
-  .messagePage .message {
+
+.messagePage .message {
     list-style: none;
     background: var(--color-white);
     padding: 3.5rem 5rem;
     border: 2px solid var(--color-light);
     border-radius: 0.7rem;
-  }
-  
-  .messagePage .message__subject {
+}
+
+.messagePage .message__subject {
     font-size: 2.8rem;
     color: var(--color-sub);
     margin-bottom: 1rem;
     margin-top: 2rem;
-  }
-  
-  .messagePage .message__author {
+}
+
+.messagePage .message__author {
     font-size: 1.8rem;
     font-weight: 500;
-  }
-  
-  .messagePage .message__date {
+}
+
+.messagePage .message__date {
     font-size: 1.4rem;
     font-weight: 400;
     text-align: left;
     margin-bottom: 3rem;
-  }
-  
-  .backButton {
+}
+
+.backButton {
     background: var(--color-main-light);
     color: var(--color-main);
     width: 4rem;
@@ -894,89 +926,89 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-  }
-  
-  .backButton i {
+}
+
+.backButton i {
     font-size: 1.8rem;
-  }
-  
-  
-  /*=======================
+}
+
+
+/*=======================
     Form Page
   ========================*/
-  
-  .formPage .formWrapper {
+
+.formPage .formWrapper {
     list-style: none;
     background: var(--color-white);
     padding: 3.5rem 5rem;
     border: 2px solid var(--color-light);
     border-radius: 0.7rem;
-  }
-  
-  .formPage .formWrapper__subject {
+}
+
+.formPage .formWrapper__subject {
     font-size: 2.8rem;
     color: var(--color-sub);
     margin-bottom: 1rem;
     margin-top: 2rem;
-  }
-  
-  
-  
-  /*=======================
+}
+
+
+
+/*=======================
     Fixed Position Alerts Wrapper
   ========================*/
-  
-  .alert {
+
+.alert {
     position: fixed;
     left: 50%;
     top: 120px;
     transform: translate(-50%, -50%);
-  
-  
-    z-index: 99999;
-  }
 
-  /*=======================
+
+    z-index: 99999;
+}
+
+/*=======================
     Footer
   ========================*/
-  footer {
+footer {
     background-color: #93A1C8;
     color: #161412;
-  }
+}
 
-  footer a {
+footer a {
     color: #161412;
     text-decoration: none;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  footer a:hover {
-    transform: translateY(-4px);  
+footer a:hover {
+    transform: translateY(-4px);
     color: #161412;
-  }
+}
 
-  .social-icon {
+.social-icon {
     font-size: 4rem;
     text-align: center;
     padding-top: 1.5rem;
-    
-  }
 
-  .footer-center {
+}
+
+.footer-center {
     text-align: center;
-  }
+}
 
-  #footer-logo {
+#footer-logo {
     padding-top: 1.5rem;
     max-width: 250px;
-  }
+}
 
-  #disclaimer {
+#disclaimer {
     font-size: 1.2rem;
     color: #161412;
-  }
+}
 
-  .github-icons {
+.github-icons {
     font-size: 3rem;
     padding: 0px 15px;
-  }
+}

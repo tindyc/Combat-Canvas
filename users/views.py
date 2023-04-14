@@ -10,6 +10,7 @@ from .models import Profile, Message
 from .forms import CustomUserCreationForm, ProfileForm, MessageForm
 from .utils import searchProfiles, paginateProfiles
 
+
 def loginUser(request):
     page = 'login'
 
@@ -29,16 +30,21 @@ def loginUser(request):
 
         if user is not None:
             login(request, user)
-            return redirect(request.GET['next'] if 'next' in request.GET else 'account')
+            return redirect(
+                request.GET['next'] if 'next' in request.GET 
+                else 'account'
+                )
         else:
             messages.error(request, 'Username or password is incorrect')
 
-    return render(request,'users/login_register.html')
+    return render(request, 'users/login_register.html')
+
 
 def logoutUser(request):
     logout(request)
     messages.info(request, 'User was logged out')
     return redirect('login')
+
 
 def registerUser(request):
     page = 'register'
@@ -53,13 +59,13 @@ def registerUser(request):
             
             messages.success(request, 'User account was created!')
 
-            login(request,user)
+            login(request, user)
             return redirect('edit-account')
         
         else:
             messages.error(request, 'An error has occured during registration')
 
-    context = {'page':page, 'form':form}
+    context = {'page': page, 'form': form}
     return render(request, 'users/login_register.html', context)
 
 
@@ -67,7 +73,7 @@ def profiles(request):
     profiles, search_query = searchProfiles(request)
 
     custom_range, profiles = paginateProfiles(request, profiles, 3)
-    context = {'profiles':profiles, 'search_query':search_query, 'custom_range':custom_range}
+    context = {'profiles': profiles, 'search_query': search_query, 'custom_range': custom_range}
     return render(request, 'users/profiles.html', context)
 
 
@@ -80,9 +86,10 @@ def userProfile(request, pk):
 @login_required(login_url='login')
 def userAccount(request):
     profile = request.user.profile
+
     projects = profile.project_set.all()
 
-    context = {'profile':profile, 'projects':projects}
+    context = {'profile': profile, 'projects': projects}
     return render(request, 'users/account.html', context)
 
 @login_required(login_url='login')
@@ -97,7 +104,7 @@ def editAccount(request):
 
             return redirect('account')
 
-    context = {'form':form}
+    context = {'form': form}
     return render(request, 'users/profile_form.html', context)
 
 

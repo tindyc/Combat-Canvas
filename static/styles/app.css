@@ -900,21 +900,73 @@
 .home-description {
   display: flex;
   justify-content: center;
+  align-content: center;
+  background-color:aliceblue;
 }
 
- /*Two Columns to add pictures*/
+.home-description > p {
+  text-align: center;
+}
+
+.where-description {
+  display: flex;
+  flex-flow: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.where-description h3 {
+  text-align: center;
+}
+
+.where-description p {
+text-align: center;
+}
+
+.where-content {
+justify-content: right;
+margin-left: 5%;
+margin-right: 10%;
+}
+
 .home-contents-container {
   display: flex;
-  flex-flow: column;
-  columns: 2;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
-.user-quote {
+.user-quote1{
+  display: flex;
+  justify-content: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.user-quote2 {
+  display: flex;
+  justify-content: right;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.content-img1{
+  display: flex;
+  justify-content: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 25%;
+  max-width: 25%;
+}
+
+.content-img2{
   display: flex;
   justify-content: center;
-}
-
-.contents-img {
-  max-width: 40%;
-  max-width: 30%;
+  max-width: 25%;
+  max-width: 25%;
+  margin-left: 5%;
+  margin-right: 5%;
 }

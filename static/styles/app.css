@@ -656,6 +656,36 @@
     text-align: right;
   }
 
+  .my-projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card, .project-card-info a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card a {
+    font-size: 3em;
+  }
+
+  .project-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card-info p {
+    padding: 2rem 2.5rem;
+    flex: 20%;
+  }
+
   /*=======================
     Media Styles ofr Profile Page
   ========================*/
@@ -675,6 +705,10 @@
 
     .userInfo__title {
       text-align: left;
+    }
+
+    .my-projects-container {
+      grid-template-columns: 1fr;
     }
   }
   

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
 :root {
     --color-sub: #2d2d39;
   }
@@ -54,7 +56,7 @@
   
   .header__menuItem > a {
     color: var(--color-light);
-    font-weight: 300;
+    font-weight: 600;
   }
   
   .toggle-menu > span {
@@ -261,33 +263,33 @@
     Veterans
   ========================*/
   
-  .devlist {
+  .userlist {
     margin-top: 8rem;
   }
   
-  .devlist .grid {
+  .userlist .grid {
     align-items: stretch;
   }
   
-  .devlist .dev .dev__profile {
+  .userlist .user .user__profile {
     display: flex;
     align-items: center;
     gap: 1.5rem;
   }
   
-  .devlist .dev .dev__meta h3 {
+  .list .user .user__meta h3 {
     color: var(--color-sub);
     font-size: 2rem;
     font-weight: 700;
   }
   
-  .devlist .dev .dev__meta h5 {
+  .userlist .user .user__meta h5 {
     color: var(--color-text);
     font-size: 1.4rem;
     font-weight: 500;
   }
   
-  .devlist .dev .dev__info {
+  .userlist .dev .user__info {
     margin: 1.5rem 0;
     font-size: 1.35rem;
     line-height: 1.4;
@@ -338,6 +340,7 @@
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    font-family: 'oswald', sans-serif;
   }
   
   .user__title {
@@ -361,6 +364,10 @@
   
   .userInfo {
     margin-bottom: 3rem;
+  }
+
+  .userInfo__title, .settings__title {
+    font-family: 'oswald', sans-serif;
   }
   
   .userInfo__title,
@@ -842,4 +849,49 @@
   
   
     z-index: 99999;
+  }
+
+  /*=======================
+    Footer
+  ========================*/
+  footer {
+    background-color: #93A1C8;
+    color: #161412;
+  }
+
+  footer a {
+    color: #161412;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  footer a:hover {
+    transform: translateY(-4px);  
+    color: #161412;
+  }
+
+  .social-icon {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    
+  }
+
+  .footer-center {
+    text-align: center;
+  }
+
+  #footer-logo {
+    padding-top: 1.5rem;
+    max-width: 250px;
+  }
+
+  #disclaimer {
+    font-size: 1.2rem;
+    color: #161412;
+  }
+
+  .github-icons {
+    font-size: 3rem;
+    padding: 0px 15px;
   }

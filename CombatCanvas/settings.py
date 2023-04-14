@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3q2$uw*+n&@^qbrvq1(a-r(&ym_kpsyo4n=-ep5hq66z%h-n@*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000']
 
@@ -141,5 +141,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-h3yl4utsqhi.ws-eu94.gitpod.io']
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_VERIFICATION = "none"

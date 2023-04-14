@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
 :root {
     --color-sub: #2d2d39;
   }
@@ -338,6 +340,7 @@
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    font-family: 'oswald', sans-serif;
   }
   
   .user__title {
@@ -361,6 +364,10 @@
   
   .userInfo {
     margin-bottom: 3rem;
+  }
+
+  .userInfo__title, .settings__title {
+    font-family: 'oswald', sans-serif;
   }
   
   .userInfo__title,

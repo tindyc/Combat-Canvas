@@ -42,5 +42,5 @@ The initial draft of the wireframe was based on how user can navigate each page 
 
  *Click link below to open wireframes* 
 
-* [**Combat Canvas Home page** ]
+* [**Combat Canvas Home page** ] (https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/combat%20canvas%20homepage.png)
 

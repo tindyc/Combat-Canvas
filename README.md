@@ -93,6 +93,31 @@ The planning and development of this project is divided into 5 planes:
 - As an ex-military veteran with anger and depression, i should be able to  
   use the Combat Canvas page to search for services that can provide 
   rehabiliation sessions
+ 
+# Features 
+
+The site allows users to register for an account, view other users projects and interact with the online community. Registered users are able to login/logout and to create and update their own profiles and save their work to the online gallery page. Website users are able to view artwork and profiles and the contents of the webpage. Registered users are able to upload projects and leave comments. Admin is able to add, edit or delete the users projects, and its comments. Users are able to delete their own projects and edit their account information. 
+CRUD Functionality
+
+Home page: 
+•	Clickable button to direct to gallery page
+
+Login page:
+•	Log in 
+•	Log out 
+•	Add profile
+
+User Page:
+•	Delete profiles
+•	Upload project
+•	Delete project 
+•	Edit comments
+•	Delete comments
+
+Veterans page:
+•	Add comments
+•	Send message through contact form 
+
 
 ## **Scope Plane**
 
@@ -166,11 +191,87 @@ Also validated the user friendliness of the site to conform with user experience
 
 All the functional requirements met the acceptance criteria set up by the team.
 
+## **DATABASE DESIGN**
+
+Throughout the development stage of the project, SQLite3 was used as this is the default database included with Django. On deployment, you are given the option to utilise PostgreSQL as this is included with Railway.app.
+
+### User Profile Model
+
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(max_length=500, blank=True, null=True)
+    username = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+    short_intro = models.CharField(max_length=200, blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
+    profile_image = models.ImageField(
+        null=True, blank=True, upload_to='profiles/', default="profiles/user-default.png")
+    social_twitter = models.CharField(max_length=200, blank=True, null=True)
+    social_linkedin = models.CharField(max_length=200, blank=True, null=True)
+    social_youtube = models.CharField(max_length=200, blank=True, null=True)
+    social_website = models.CharField(max_length=200, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+### Project Model
+
+	owner = models.ForeignKey(
+     Profile, null=True, blank=True, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    description = models.TextField(null=True, blank=True)
+    featured_image = models.ImageField(
+        null=True, blank=True, default="default.jpg")
+    demo_link = models.CharField(max_length=2000, null=True, blank=True)
+    tags = models.ManyToManyField('Tag', blank=True)
+    vote_total = models.IntegerField(default=0, null=True, blank=True)
+    vote_ratio = models.IntegerField(default=0, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+
+
 ## Deployment
 
-The working websites has been deployed  
+### Application Hosting
+### **Railway.app**
 
-# Deployment steps 
+The site is hosted using [Railway](https://railway.app/), deployed directly from the main branch of GitHub. The deployed site will update automatically as new commits are pushed to the master branch.
+
+#### Creating a Railway app
+- From the Railway.app dashboard:
+  - Select “New Project"
+  - Select “Deploy from Github repo"
+
+#### Setting Environmental Variables
+- From the Railway dashboard:
+  - Select your app from the list
+  - Select "Variables" from the menu
+  - Add environment variables in key-value pairs, click "Add" to add additional pairings.
+
+#### Deployment
+- Create required deployment files in the repository:
+  - requirements.txt
+      - Lists the required python modules for Railway.app to install.
+    - To create:
+      - In your IDE terminal, type: ``pip freeze > requirements.txt``
+
+  - Procfile
+      -  Tell Railway.app the command to launch the app.
+	''web: python manage.py migrate && gunicorn CombatCanvas.wsgi''
+
+  - runtime.txt
+      -  Tell Railway.app the version of python used in the project.
+	''python-3.9.6''
+
+  - .gitignore (optional)
+      - Lists files and directories which should be deployed to live app, such as files with environmental passkeys.
+    - To create:
+      - In your IDE terminal, type: ``touch .gitignore``
+      - List the files and directories to be excluded from live deployment, within the .gitignore file.
+      - Save in your repository root directory.
 
 
 ## Credits 

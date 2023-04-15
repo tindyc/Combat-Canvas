@@ -1052,7 +1052,7 @@
   legend {
     text-align: center;
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #contact-form-logo {
@@ -1060,7 +1060,7 @@
     margin: auto;
 }
 
-.contact-form {
+.contact-form {gi
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -1106,7 +1106,7 @@
 }
 .send-button {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     background-color: #7986a7;
     border-radius: 8px;
     min-height: 35px;
@@ -1119,7 +1119,7 @@
 }
 
 .lg-sgn-btn {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.5rem;
 }
 .required-field-bottom {

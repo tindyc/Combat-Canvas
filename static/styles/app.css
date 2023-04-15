@@ -1100,8 +1100,9 @@
   background-color: var(--color-bg);
 }
 .contact-required-field {
-    color: red;
     font-size: 80%;
+    font-weight: 500;
+    background-color: #fff;
 }
 .send-button {
     font-size: 1.5rem;

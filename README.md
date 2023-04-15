@@ -188,6 +188,48 @@ Testing was done within the team.The purpose of testing is to verify no broken l
  Also validated the user friendliness of the site to conform with user experience design.
 All the functional requirements met the acceptance criteria set up by the team.
 
+## **DATABASE DESIGN**
+
+Throughout the development stage of the project, SQLite3 was used as this is the default database included with Django. On deployment, you are given the option to utilise PostgreSQL as this is included with Railway.app.
+
+### User Profile Model
+
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(max_length=500, blank=True, null=True)
+    username = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+    short_intro = models.CharField(max_length=200, blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
+    profile_image = models.ImageField(
+        null=True, blank=True, upload_to='profiles/', default="profiles/user-default.png")
+    social_twitter = models.CharField(max_length=200, blank=True, null=True)
+    social_linkedin = models.CharField(max_length=200, blank=True, null=True)
+    social_youtube = models.CharField(max_length=200, blank=True, null=True)
+    social_website = models.CharField(max_length=200, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+### Project Model
+
+	owner = models.ForeignKey(
+     Profile, null=True, blank=True, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    description = models.TextField(null=True, blank=True)
+    featured_image = models.ImageField(
+        null=True, blank=True, default="default.jpg")
+    demo_link = models.CharField(max_length=2000, null=True, blank=True)
+    tags = models.ManyToManyField('Tag', blank=True)
+    vote_total = models.IntegerField(default=0, null=True, blank=True)
+    vote_ratio = models.IntegerField(default=0, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+
+
 ## Deployment
 
 ### Application Hosting
@@ -227,11 +269,6 @@ The site is hosted using [Railway](https://railway.app/), deployed directly from
       - In your IDE terminal, type: ``touch .gitignore``
       - List the files and directories to be excluded from live deployment, within the .gitignore file.
       - Save in your repository root directory.
-
-
-The working websites has been deployed  
-
-# Deployment steps 
 
 
 ## Credits 

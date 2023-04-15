@@ -13,7 +13,7 @@
     * [**Surface**](Surface)
     * [**Features** ](#Features)
    * [**Existing Features**](#Existing-Features)
-   * [**Features Left to Implement**](#Features-Nice To Have)
+   * [**Future Features**](#Future-features)
    * [**Technologies Used**](#Technologies-Used)
     * [**Frameworks and libraries used in the project**](#Frameworks-and-libraries-used-in-the-project)
 * [ **Testing**](#Testing)
@@ -27,28 +27,28 @@
 ---
 # Project Demo Page
 
- ![Screen image](static/images/Screendemo.jpg)
+ ![Screen image](static/images/screenshot.png)
  
 
 [**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)
 
 ## Project Brief
-Code Institute London Hackathon project in conjuction with SODA Social and in partnership with Ex-Military Careers.COM ,came up with the initiative *supporting Veterans Mental Health*.
+Code Institute London Hackathon project in conjuction with SODA Social and in partnership with ex-militarycareers.com came up with the initiative *Supporting Veterans' Mental Health*.
 
-My team has chosen *The ART THERAPY GALLERY:A platform where veterans can submit and showcase their creativity work*.
-   we believe that mental health  awareness is vital amongst VETERANS , their is overbearing stigma surrounding mental health with lack of educationa resources and the  society so many are left aliented . This project is dedicated to  help create a space for veterans  to express themselves and hope this will help to reduce the sitgam and promote cathartic therapy that ART can offer.
+The team has chosen *The ART THERAPY GALLERY: A platform where veterans can submit and showcase their creative work*.
+   We believe that mental health  awareness is vital amongst veterans. There is overbearing stigma surrounding mental health with lack of educational resources and so many are left aliented in society. This project is dedicated to  help create a space for veterans to express themselves through therapeutic art, and we hope this will help to reduce the stigma and promote cathartic therapy that art can offer.
 
-  This project is  also an opportunity for CI students to brainstorm and also to use their coding skills to develop apps and websites to support the veterans activities such as Wellness tracker, Veterans stories and other Mental health resources.
+  This project is also an opportunity for CI students to brainstorm and also to use their coding skills to develop apps and websites to support the veterans activities such as Wellness tracker, Veterans stories and other Mental health resources.
 
- In preparing for this project we have conducted research on some veterans websites and also partictipated in the *SODA* webinar with some veterans at present. This gave us more insights on what to develop for the project. 
+ In preparing for this project we have conducted research on some veterans websites and also partictipated in the *SODA* webinar with some veterans present. This gave us more insights on what to develop for the project. 
 
-The team has created Art work of Gallery to show case the veterans work. We have used Django and Python programming skills to develop the webpages and incorporated CRUD functionality (Create,Read,Update and Delete). Team has worked in Sprints using Agile methodology to deliver the project.
+The team has created a gallery to showcase the veterans' work. We have used Django and Python programming skills to develop the webpages and incorporated CRUD functionality (Create, Read, Update and Delete). Team has worked in sprints using Agile methodology to deliver the project.
 
 ## User Experience
 
-In this section, We are going to provide insights into  UX process, mainly focusing on the ART THERAPY GALLERY  which is what this application is built for and  what it intent to achieve and how Veterans can best utilise this web application to fulfil their needs.
+In this section, We are going to provide insights into the UX process, mainly focusing on the art therapy gallery which is what this application is built for, what it intends to achieve and how veterans can best utilise this web application to fulfil their needs.
 
-The webpage contents and functionality has been developed with user interface and aesthetics focus in mind based on the user type(Veterans).
+The webpage contents and functionality has been developed with user interface and aesthetics in mind, catered to our demographic.
 
 According to Caglar Araz from UX Collective, User Experience (UX) is "User experience refers to the singular and accumulated experiences that occur for users as a consequence of them interacting with an object in a given context."
 
@@ -65,31 +65,27 @@ The planning and development of this project is divided into 5 planes:
 
 ### Creator Goals
 
-- To create an interactive web application that is fully responsive on desktop to smaller devices such as mobile and Tablet
+- Our website is designed to bring veterans together through art.
 
--  To create a website with interface design, presenting a logical structure allowing users(Veterans) to easily navigate.
+- At Combat Canvas users can not only veiw art, but be encouraged to create projects themselves.
 
+- Using the site's log in feature users can create a profile and upload their own creations and comment on each others' to encourage them.
+
+- The site aims to be responsive to all devices, and accessible to keyboard only users and users with visual impariments.
 
 # User Stories
 
--  As a veteran, i should be able to login, create and save profile picture  of myself so i can easily identify the authentcity of my page.
+__A vetaran without previous access to art therapy.__
+Objective: I am hoping that art therapy becomes a calming influence in my life and helps my PTSD flashbacks become less frequent as a result.
+I am looking for a website that is easy to navigate.
 
--  As a Veteran, I would like to navigate the art gallery to see the art 
-    work.
- 
-- As Veteran, I should be able to navigate on all the links on the page  to see contents that might be of interest. 
+__A veteran who is struggling with lonilness and a loss of identity.__
+Objective: I am looking to Combat Canvas to help me engage with a new community.
+I also am looking to start a new hobby so that I can figure out who I am outside of the Military.
 
--   As a Veteran, I should be able to use the site  to easily access resources and  help guidance.
-
-- As a veteran  with no previous access to art therapy i should be able to 
-  search for help  on the Combat Canvas page so i can get help with calming influence therapy.
-
-- As a veteran struggling with loneliness, i should be able to use the  
-  website to engage with new community to start a new hubby to improve my emotions.
-
-- As an ex-military veteran with anger and depression, i should be able to  
-  use the Combat Canvas page to search for services that can provide 
-  rehabiliation sessions
+__A veteran whose time in the miltary has ended and stuggles with anger and depression.__
+Objective: I am looking for a way to process my emotions in a healthy way
+I want to build new connections with people who have the same experiences.
  
 # Features 
 
@@ -163,13 +159,11 @@ The initial draft of the wireframe was based on how user can navigate each page 
 
 ### Design
 
-The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop, laptop, tablet to mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
+The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop and laptop, to tablet and mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
 
 ### Typography
 
-We have used Oswald Heavy fonts for headings and Merriweather  for Paragraph
-
-The website is fully responsive across all devices with the help of CSS styling and media queries to custom font sizes (smaller for mobile devices) and styles to keep all the content in place and legible.
+We have used Oswald Heavy fonts for headings and Merriweather for Paragraph
 
 ## Colour Scheme.
 
@@ -184,9 +178,53 @@ The website is fully responsive across all devices with the help of CSS styling 
 
 ## Testing
 -------------
-Testing was done within the team.The purpose of testing is to verify no broken links and all navigation pages opens up.
- Also validated the user friendliness of the site to conform with user experience design.
+Testing was done within the team.
+
+Also validated the user friendliness of the site to conform with user experience design.
+
 All the functional requirements met the acceptance criteria set up by the team.
+
+## **DATABASE DESIGN**
+
+Throughout the development stage of the project, SQLite3 was used as this is the default database included with Django. On deployment, you are given the option to utilise PostgreSQL as this is included with Railway.app.
+
+### User Profile Model
+
+    user = models.OneToOneField(
+        User, on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(max_length=500, blank=True, null=True)
+    username = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+    short_intro = models.CharField(max_length=200, blank=True, null=True)
+    bio = models.TextField(blank=True, null=True)
+    profile_image = models.ImageField(
+        null=True, blank=True, upload_to='profiles/', default="profiles/user-default.png")
+    social_twitter = models.CharField(max_length=200, blank=True, null=True)
+    social_linkedin = models.CharField(max_length=200, blank=True, null=True)
+    social_youtube = models.CharField(max_length=200, blank=True, null=True)
+    social_website = models.CharField(max_length=200, blank=True, null=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+### Project Model
+
+	owner = models.ForeignKey(
+     Profile, null=True, blank=True, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    description = models.TextField(null=True, blank=True)
+    featured_image = models.ImageField(
+        null=True, blank=True, default="default.jpg")
+    demo_link = models.CharField(max_length=2000, null=True, blank=True)
+    tags = models.ManyToManyField('Tag', blank=True)
+    vote_total = models.IntegerField(default=0, null=True, blank=True)
+    vote_ratio = models.IntegerField(default=0, null=True, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True,
+                          primary_key=True, editable=False)
+
+
 
 ## Deployment
 
@@ -227,11 +265,6 @@ The site is hosted using [Railway](https://railway.app/), deployed directly from
       - In your IDE terminal, type: ``touch .gitignore``
       - List the files and directories to be excluded from live deployment, within the .gitignore file.
       - Save in your repository root directory.
-
-
-The working websites has been deployed  
-
-# Deployment steps 
 
 
 ## Credits 

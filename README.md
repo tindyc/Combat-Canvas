@@ -27,7 +27,7 @@
 ---
 # Project Demo Page
 
- ![Screen image](static/images/Screendemo.jpg)
+ ![Screen image](static/images/Picture1.jpg)
  
 
 [**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)

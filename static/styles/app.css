@@ -572,7 +572,6 @@
   ========================*/
   .projects > .hero-section {
     background: var(--color-sub-lighter);
-    height: 30vh;
   }
   
   .projects .hero-section__box {

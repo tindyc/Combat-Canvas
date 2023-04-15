@@ -3,9 +3,8 @@
 
 {% block content %}
 
-<div class="contact-form-container-outer">
-    <div class="contact-form-container-inner">
-        <div class="contact-form-container">
+<div class="auth">
+        <div class="card">
             <form action="" method="post" class="contact-form">
                 <fieldset>
                     <div id="contact-form-logo">
@@ -14,24 +13,24 @@
                         </a>
                     </div>
                     <legend>Contact Us</legend>
-                    <div class="contact-form-control">
+                    <div class="contact-form-control form__field">
                         <label for="full-name">Full name <span class="contact-required-field">*</span></label>
-                        <input type="text" id="full-name" name="full_name" class="contact-text-input" required>
+                        <input type="text" id="full-name" name="full_name" class="contact-text-input input input--text" required>
                     </div>
-                    <div class="contact-form-control">
+                    <div class="contact-form-control form__field">
                         <label for="email">Email Address <span class="contact-required-field">*</span></label>
-                        <input type="email" id="email" name="email_address" class="contact-text-input" required>
+                        <input type="email" id="email" name="email_address" class="contact-text-input input" required>
                     </div>
-                    <div class="contact-form-control">
+                    <div class="contact-form-control form__field">
                         <label for="subject">Subject <span class="contact-required-field">*</span></label>
-                        <input type="text" id="subject" name="subject_form" class="contact-text-input subject" required>
+                        <input type="text" id="subject" name="subject_form" class="contact-text-input input" required>
                     </div>
-                    <div class="contact-form-control">
+                    <div class="contact-form-control form__field">
                         <label for="comments">Comments <span class="contact-required-field">*</span></label>
                         <textarea id="comments" cols="20" rows="5" maxlength="500" name="comments_form"
-                            class="contact-text-input" required></textarea>
+                            class="contact-text-input input" required></textarea>
                     </div>
-                    <div class="contact-form-control">
+                    <div class="contact-form-control required-field-bottom">
                         <div>
                             <span class="contact-required-field">*</span> Required fields
                         </div>

@@ -7,7 +7,7 @@
 
 * [**Project Brief**](#Project-Brief)
 
-* [**UX** ](#UX)
+* [**User Experience** ](#UX)
     * [**User Stories**](#User-Stories)
     * [**Wireframe** ](#Wireframe)
 
@@ -35,12 +35,61 @@ My team has chosen *The ART THERAPY GALLERY:A platform where veterans can submit
 
 The team has created Art work of Gallery to show case the veterans work. We have used Django and Python programming skills to develop the webpages and incorporated CRUD functionality (Create,Read,Update and Delete). Team has worked in Sprints using Agile methodology to deliver the project.
 
-## UX 
+## User Experience
+
+In this section, We are going to provide insights into  UX process, mainly focusing on the ART THERAPY GALLERY  which is what this application is built for and  what it intent to achieve and how Veterans can best utilise this web application to fulfil their needs.
 
 The webpage contents and functionality has been developed with user interface and aesthetics focus in mind based on the user type(Veterans).
 
+According to Caglar Araz from UX Collective, User Experience (UX) is "User experience refers to the singular and accumulated experiences that occur for users as a consequence of them interacting with an object in a given context."
+
+The planning and development of this project is divided into 5 planes:
+
+1. The Strategy Plane
+2. The Scope Plane
+3. The Structure Plane
+4. The Skeleton Plane
+5. The Surface Plane
+
+    ------------------
+    ## **Strategy Plane**
+
+### Creator Goals
+
+- To create an interactive web application that is fully responsive on desktop to smaller devices such as mobile and Tablet
+
+-  To create a website with interface design, presenting a logical structure allowing users(Veterans) to easily navigate.
+
+
 # User Stories
 
+-   As a Veteran, I would like to navigate the art gallery to see the art work.
+
+-   As a Veteran, I would like to be able to navigate to desired sections and opens picture.
+
+-   As a Veteran , I would like to easily access resources and  help guidance.
+
+## **Scope Plane**
+
+-   A simple home page with responsive navigation bar to allow user to easily navigate without having to scroll and to show the purpose of the website.
+
+-   Simple roadmap design that is visually appealing, non-distracting and easy to follow.
+
+-   The design of the website should be visually consistent across all aspects to make it visually pleasing and comfortable for users.
+
+-   The web application should be responsive across different resolutions.
+
+## **Structure Plane**
+
+---
+
+1. Home
+
+    - The Navbar is always fixed on top of the page with *COMBAT CANVAS logo* , the logo is on the left-hand side of the bar and a menu on the right with clear names of site pages for the ease of navigation. The carousel changes the images. This Navbar will stay consistent throughout the entire website and will automatically minimised into a hamburger menu on smaller devices.
+
+    - The content of the home page contains the veterans pictures, and other contents they can navigate to.
+
+    - A footer with social media links is featured at the bottom to allow users to easily connect with socials.
 
 # Wireframes
 We have created mockup screens of the webpage functionalities using Balsamic Software tool.
@@ -63,7 +112,7 @@ The initial draft of the wireframe was based on how user can navigate each page 
 
 ### Frameworks and libraries used
  * Django
- * *ython 
+ * Python 
  * CSS 
  * Html 
  * Google Fonts 
@@ -75,6 +124,12 @@ Testing was done within the team.The purpose of testing is to verify no broken l
 All the functional requirements met the acceptance criteria set up by the team.
 
 ## Deployment
+
+
+The working websites has been deployed  
+
+# Deployment steps 
+
 
 ## Credits 
 
@@ -130,7 +185,7 @@ Alex Doherty
 Vasile Tios Tsimourdagkas 
 Ant
 
-We acknowledge SODA and all the Code institute staff on site for the London April Hackathon for their support and providing on site 
+We acknowledge SODA and all the Code institute staff on site for the London April Hackathon for their support on site.
 
 
 

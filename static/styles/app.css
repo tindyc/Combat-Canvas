@@ -333,6 +333,7 @@ img {
 
 .profile .card>.dev {
     padding: 4rem;
+<<<<<<< HEAD
 }
 
 .user__avatar {
@@ -341,15 +342,43 @@ img {
 }
 
 .user__name {
+=======
+  }
+
+  .column--2of3 {
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user__avatar {
+    display: block;
+    margin: auto;
+  }
+
+  .account-mobile-mode {
+    display: none;
+  }
+  
+  .user__name {
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     color: var(--color-sub);
-    font-size: 2.8rem;
+    font-size: 4rem;
     font-weight: 700;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: 'oswald', sans-serif;
+<<<<<<< HEAD
 }
 
 .user__title {
+=======
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user__title {
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.3;
@@ -366,7 +395,21 @@ img {
     justify-content: center;
     gap: 1.5rem;
     font-size: 2em;
+<<<<<<< HEAD
 }
+=======
+  }
+  
+  .userInfo {
+    margin-bottom: 3rem;
+    align-self: center;
+  }
+
+  .userInfo__title, .settings__title {
+    font-family: 'oswald', sans-serif;
+    text-align: center;
+  }
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
 
 .userInfo {
     margin-bottom: 3rem;
@@ -395,11 +438,17 @@ img {
     font-size: 1.45rem;
     line-height: 1.7;
     text-align: justify;
+<<<<<<< HEAD
 }
 
 
 
 /*=======================
+=======
+  }
+  
+  /*=======================
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     Single Projects
   ========================*/
 
@@ -415,9 +464,19 @@ img {
     .singleProject .column--2of3 {
         order: 2;
     }
+<<<<<<< HEAD
 }
 
 .singleProject__toolStack {
+=======
+  }
+  
+  .account-projects-con {
+    padding: 2rem 2.5rem;
+  }
+
+  .singleProject__toolStack {
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
@@ -561,6 +620,7 @@ img {
   ========================*/
 .account-layout {
     flex-wrap: nowrap;
+<<<<<<< HEAD
 }
 
 .settingsPage .dev>.settings__btn {
@@ -569,6 +629,28 @@ img {
 }
 
 .settings {
+=======
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .settingsPage .dev > .settings__btn {
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+
+  .account-about-con {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .settings {
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -630,9 +712,134 @@ img {
 
 .settings__tableActions {
     text-align: right;
+<<<<<<< HEAD
 }
 
 /*=======================
+=======
+  }
+
+  .my-projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project-card, .project-card-info a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card a {
+    font-size: 3em;
+  }
+
+  .project-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+  }
+
+  .project-card-info p {
+    padding: 2rem 2.5rem;
+    flex: 20%;
+  }
+
+  /*=======================
+    Media Styles ofr Profile Page
+  ========================*/
+
+  @media screen and (max-width: 767px) {
+    .account-mobile-mode {
+      display: block;
+    }
+
+    .account-desktop-mode {
+      display: none;
+    }
+
+    .account-about-con {
+      flex-direction: column;
+    }
+
+    .userInfo__title {
+      text-align: left;
+    }
+
+    .my-projects-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /*=======================
+    Single Project Page
+  ========================*/
+
+  .single-project-title {
+    font-size: 4.5em;
+  }
+
+  .single-project-artist {
+    font-size: 1.7em;
+    text-decoration: none;
+    margin-bottom: 3rem;
+  }
+
+  .single-project-subtitle {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .single-project-container, .single-project-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-project-info {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .single-project-about {
+    font-size: 1.5em;
+  }
+
+  .single-project-tags {
+    padding: 2em 2.5em;
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-project-heading {
+    text-align: center;
+  }
+  
+  .single-project-tag-list {
+    align-items: center;
+  }
+
+  /*=======================
+    Media Styles for Single Project
+  ========================*/
+
+  @media screen and (max-width: 767px) {
+    .single-project-info {
+      flex-direction: column;
+    }
+  }
+
+  /*=======================
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
     Login/SignUp
   ========================*/
 
@@ -1024,4 +1231,150 @@ footer a:hover {
 .github-icons {
     font-size: 3rem;
     padding: 0px 15px;
+<<<<<<< HEAD
+=======
+  }
+
+  /*Home Page*/
+.home-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.home-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:aliceblue;
+}
+
+.home-description > p {
+  text-align: center;
+}
+
+.where-description {
+  display: flex;
+  flex-flow: row;
+  padding: 0 30px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.where-description h3 {
+  text-align: center;
+}
+
+.where-description p {
+text-align: center;
+}
+
+.where-content {
+justify-content: right;
+margin-left: 5%;
+margin-right: 10%;
+}
+
+.home-contents-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.user-quote1 {
+  text-align: left;
+  background-color: aliceblue;
+  flex-basis: 30%;
+}
+
+.user-quote2 {
+  text-align: left;
+  background-color: aliceblue;
+  flex-basis: 30%;
+}
+
+.content-img1 {
+  justify-content: left;
+  max-width: 25%;
+  max-width: 25%;
+}
+
+.content-img2 {
+  margin: auto;
+  max-width: 25%;
+  max-width: 25%;
+}
+
+.projects-button {
+display: flex;
+justify-content: center;
+}
+
+/*Media Queries for the home page*/
+
+@media screen and (max-width: 400px) {
+.home-description {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+  .where-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-contents-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-img1 {
+  justify-content: left;
+  max-width: 50%;
+  max-width: 80%;
+  padding-bottom: 20px;
+}
+
+.content-img2 {
+  margin: auto;
+  max-width: 50%;
+  max-width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 850px) {
+  .home-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+    .where-description {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-contents-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-img1 {
+    justify-content: left;
+    max-width: 50%;
+    max-width: 80%;
+    padding-bottom: 20px;
+  }
+  
+  .content-img2 {
+    margin: auto;
+    max-width: 50%;
+    max-width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+>>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
 }

@@ -11,7 +11,7 @@
         {% for page in custom_range %}
 
         {% if page == queryset.number%}
-        <li><a href="?page={{page}}" class="btn page-link btn--sub" data-page="{{page}}">{{page}}</a></li>
+        <li><a href="?page={{page}}" class="btn page-link" data-page="{{page}}">{{page}}</a></li>
         {% else %}
         <li><a href="?page={{page}}" class="btn page-link" data-page="{{page}}">{{page}}</a></li>
         {% endif %}

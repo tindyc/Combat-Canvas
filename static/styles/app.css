@@ -575,7 +575,7 @@
     Projects Page
   ========================*/
   .projects > .hero-section {
-    background: var(--color-sub-lighter);
+    background: rgba(240, 248, 255, 0.9);
   }
   
   .projects .hero-section__box {

@@ -13,13 +13,13 @@
           <div class="toggle-menu__lines"></div>
         </label>
         <ul class="header__menu">
-          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'profiles' %}">Veterans</a></li>
-          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'projects' %}">Gallery</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a class="header__link" href="{% url 'profiles' %}">Veterans</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a class="header__link" href="{% url 'projects' %}">Gallery</a></li>
 
           {% if request.user.is_authenticated %}
-          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'inbox' %}">Inbox</a></li>
-          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'account' %}">Account</a></li>
-          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'logout' %}" class="btn btn--sub">Logout</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a class="header__link" href="{% url 'inbox' %}">Inbox</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a class="header__link" href="{% url 'account' %}">Account</a></li>
+          <li class="header__menuItem"><a href="{% url 'logout' %}" class="btn btn--sub">Logout</a></li>
           {% else %}
           <li class="header__menuItem"><a href="{% url 'login' %}" class="btn btn--sub">Login/Sign Up</a></li>
           {% endif %}

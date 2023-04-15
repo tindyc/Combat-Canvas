@@ -3,13 +3,43 @@
 :root {
     --color-sub: #2d2d39;
   }
+
+  a {
+    text-decoration: none;
+  }
   
   .btn--sub {
-    background-color: var(--color-sub-light);
+    background-color: #7986a7;
+    border-radius: 8px;
+    min-height: 35px;
+    min-width: 75px;
+    box-shadow: 3px 3px 6px #2d2d39;
+    border: none;
+    color: #161412;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  }
+
+  .btn--sub a {
+    color: #161412;
+    padding: 0px 10px;
+    font-size: small;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .btn--sub:hover {
+    transform: translateY(1px);   
+    box-shadow: none; 
   }
   
   .card {
     border: 2px solid var(--color-light);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #2d2d39;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
   }
   
   img {
@@ -61,12 +91,15 @@
     font-family: 'Oswald', sans-serif;
     font-size: large;
     text-decoration: none;
+  }
+
+  .header__menuItem .header__link {
     transition: transform 0.3s ease-in-out;
   }
 
-  .header__menuItem > a:hover {
-  transform: translateY(-4px);  
-  color: #161412;
+.header__menuItem .header__link:hover {
+    transform: translateY(-4px);  
+    color: #161412;
 }
 
 .hvr-underline-from-center {
@@ -513,6 +546,7 @@
     font-weight: 700;
     color: var(--color-sub);
     margin-bottom: 3rem;
+    font-family: 'Oswald', sans-serif;
   }
   
   .project__author{
@@ -568,8 +602,9 @@
   
   .project__title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--color-sub);
+    font-family: 'Oswald', sans-serif;
   }
   
   .project__info {

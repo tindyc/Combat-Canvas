@@ -4,7 +4,7 @@
   <header class="header">
     <div class="container container--narrow">
       <a href="{% url 'home' %}" class="header__logo">
-        <img src="{% static 'images/logo.svg' %}" alt=" Logo" />
+        <img src="{% static 'images/logo1.png' %}" alt="Logo" />
       </a>
       <nav class="header__nav">
         <input type="checkbox" id="responsive-menu" />
@@ -13,15 +13,13 @@
           <div class="toggle-menu__lines"></div>
         </label>
         <ul class="header__menu">
-          <li class="header__menuItem"><a href="{% url 'home' %}">Home</a></li>
-          <li class="header__menuItem"><a href="{% url 'profiles' %}">Veterans</a></li>
-          <li class="header__menuItem"><a href="{% url 'projects' %}">Gallery</a></li>
-          <li class="header__menuItem"><a href="{% url 'contact' %}">Contact</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'profiles' %}">Veterans</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'projects' %}">Gallery</a></li>
 
           {% if request.user.is_authenticated %}
-          <li class="header__menuItem"><a href="{% url 'inbox' %}">Inbox</a></li>
-          <li class="header__menuItem"><a href="{% url 'account' %}">Account</a></li>
-          <li class="header__menuItem"><a href="{% url 'logout' %}" class="btn btn--sub">Logout</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'inbox' %}">Inbox</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'account' %}">Account</a></li>
+          <li class="header__menuItem hvr-underline-from-center"><a href="{% url 'logout' %}" class="btn btn--sub">Logout</a></li>
           {% else %}
           <li class="header__menuItem"><a href="{% url 'login' %}" class="btn btn--sub">Login/Sign Up</a></li>
           {% endif %}

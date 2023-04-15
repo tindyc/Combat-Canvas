@@ -167,7 +167,7 @@ AWS_S3_SIGNATURE_VERSION = "s3v4"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-h3yl4utsqhi.ws-eu94.gitpod.io','combat-canvas-production.up.railway.app','http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-h3yl4utsqhi.ws-eu94.gitpod.io','https://combat-canvas-production.up.railway.app','http://127.0.0.1:8000']
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_VERIFICATION = "none"
 

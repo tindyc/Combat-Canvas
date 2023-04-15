@@ -1009,7 +1009,7 @@
   
   .auth__header p {
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
   }
   
@@ -1046,35 +1046,28 @@
   legend {
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
 }
 
-.form-container-mid {    
-    display: flex;
-    justify-content: center;    
+#contact-form-logo {
+    width: 50%;
+    margin: auto;
 }
 
-.form-container {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    flex-basis: 100%;   
-}
-
-.contact-form {    
+.contact-form {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-basis: 30%;
-    font-weight: 600;
-    border-radius: 2rem;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
-    /* color: #1B264F; */
+    flex: 1;
+    font-size: 1.5rem;
 }
 
 .form-control {
     display: flex;
     flex-direction: column;
-    flex: 1;    
+    max-width: 80%;
+    margin: auto;
 }
 
 .form-control input {
@@ -1104,17 +1097,19 @@
     background-color: #1B264F;
     color: #F5F3F5;
     padding: 5px 15px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 600;
 }
 
 #required-field-bottom {
     margin-top: 5px;
     font-size: 70%;
+    color: var(--color-text);
 }
 
-@media screen and (max-width:400px) {
-    .contact-form {
-        flex-basis: 100%;
+@media screen and (max-width:1024px) {
+    .auth>.card {
+        flex-basis: 60%;
     }
 }
 

@@ -35,11 +35,7 @@
                 </div>
             </div>
             <div class="single-project-comments">
-                <h3 class="single-project-subtitle">Feedback</h3>
-                <h5 class="single-project-rating">
-                    {{project.vote_ratio}}% Positive Feedback ({{project.vote_total}}
-                    Vote{{project.vote_total|pluralize:"s"}})
-                </h5>
+                <h3 class="single-project-comments-title">Comments</h3>
                 {% if request.user.profile.id in project.reviewers %}
                 <p>You have already submitted your review for this project</p>
                 {% elif request.user.profile == project.owner %}
@@ -53,7 +49,7 @@
                         {{field}}
                     </div>
                     {% endfor %}
-                    <input class="btn btn--sub btn--lg" type="submit" value="Add Review" />
+                    <input class="single-project-comment-submit" type="submit" value="Post Comment" />
                 </form>
                 {% else %}
                 <a href="{% url 'login' %}?next={{request.path}}">Please login to leave a review</a>

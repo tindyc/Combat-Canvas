@@ -63,6 +63,11 @@
             <div class="project-card-info">
               <a href="{% url 'project' project.id %}"><img src="{{project.imageURL}}" alt="Project Thumbnail" /></a>
               <p>{{project.description|slice:"150"}}</p>
+                <a class="tag tag--pill tag--main settings__btn" href="{% url 'update-project' project.id %}"><i
+                    class="im im-edit"></i> Edit</a>
+                <a class="tag tag--pill tag--main settings__btn"
+                  href="{% url 'delete-project'  project.id %}?next=/account"><i class="im im-x-mark-circle-o"></i>
+                  Delete</a>
             </div>
           </div>
           {% endfor %}

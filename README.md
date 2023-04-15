@@ -75,24 +75,17 @@ The planning and development of this project is divided into 5 planes:
 
 # User Stories
 
--  As a veteran, i should be able to login, create and save profile picture  of myself so i can easily identify the authentcity of my page.
+__A vetaran without previous access to art therapy.__
+Objective: I am hoping that art therapy becomes a calming influence in my life and helps my PTSD flashbacks become less frequent as a result.
+I am looking for a website that is easy to navigate.
 
--  As a Veteran, I would like to navigate the art gallery to see the art 
-    work.
- 
-- As Veteran, I should be able to navigate on all the links on the page  to see contents that might be of interest. 
+__A veteran who is struggling with lonilness and a loss of identity.__
+Objective: I am looking to Combat Canvas to help me engage with a new community.
+I also am looking to start a new hobby so that I can figure out who I am outside of the Military.
 
--   As a Veteran, I should be able to use the site  to easily access resources and  help guidance.
-
-- As a veteran  with no previous access to art therapy i should be able to 
-  search for help  on the Combat Canvas page so i can get help with calming influence therapy.
-
-- As a veteran struggling with loneliness, i should be able to use the  
-  website to engage with new community to start a new hubby to improve my emotions.
-
-- As an ex-military veteran with anger and depression, i should be able to  
-  use the Combat Canvas page to search for services that can provide 
-  rehabiliation sessions
+__A veteran whose time in the miltary has ended and stuggles with anger and depression.__
+Objective: I am looking for a way to process my emotions in a healthy way
+I want to build new connections with people who have the same experiences.
  
 # Features 
 

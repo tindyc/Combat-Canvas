@@ -11,15 +11,18 @@
             </div>
 
             <div class="hero-section__search">
+                <div>
+                    <p>Here at Combat Canvas, veterans can showcase their art and encourage one another.
+                        Click on thier profiles to read their story about how expressing themselves through art has helped them to work through thier mental health struggles and enabled them to cope with and reflect on thier past experiences.</p>
+                </div>
                 <form id='searchForm' class="form" action="{% url 'projects' %}" method="get">
                     <div class="form__field">
                         <label for="formInput#search">Search By Art Projects </label>
                         <input class="input input--text" id="formInput#search" type="text" name="search_query"
                             placeholder="Search by Art Project Title" value="{{search_query}}" />
                     </div>
-
-                    <input class="btn btn--sub btn--lg" type="submit" value="Search" />
                 </form>
+                <button class="btn btn--sub" form="searchForm" type="submit" value="Search">Search</button>
             </div>
         </div>
     </section>
@@ -29,7 +32,7 @@
             <div class="grid grid--three">
 
                 {% for project in projects %}
-                <div class="column">
+                <div class="column project-results">
                     <div class="card project">
                         <a href="{% url 'project' project.id %}" class="project">
                             <img class="project__thumbnail" src="{{project.imageURL}}" alt="project thumbnail" />

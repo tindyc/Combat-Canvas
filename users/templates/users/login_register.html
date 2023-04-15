@@ -5,7 +5,7 @@
 
 {% if page == 'register' %}
 
-    <div class="auth">
+<div class="auth">
       <div class="card">
         <div class="auth__header text-center">
           <a href="/">
@@ -65,7 +65,7 @@
           <form action="{%url 'login'%}" method="POST" class="form auth__form">
             {% csrf_token %}
             <!-- Input:Username -->
-            <div class="form__field">
+            <div class="form__field .contact-text-input">
               <label for="formInput#text">Username: </label>
               <input
                 class="input input--text"
@@ -98,8 +98,6 @@
           </div>
         </div>
       </div>
-
-
     {% endif %}
 
     

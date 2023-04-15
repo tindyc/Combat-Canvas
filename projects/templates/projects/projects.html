@@ -32,7 +32,7 @@
             <div class="grid grid--three">
 
                 {% for project in projects %}
-                <div class="column">
+                <div class="column project-results">
                     <div class="card project">
                         <a href="{% url 'project' project.id %}" class="project">
                             <img class="project__thumbnail" src="{{project.imageURL}}" alt="project thumbnail" />

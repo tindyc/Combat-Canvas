@@ -35,10 +35,13 @@
     border: 2px solid var(--color-light);
     border-radius: 15px;
     box-shadow: 5px 5px 10px #2d2d39;
-    transition: transform 0.3s ease-in-out;
   }
 
-  .card:hover {
+  .project-results .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+  .project-results .card:hover {
     transform: translateY(-6px);
   }
   

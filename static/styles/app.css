@@ -1378,3 +1378,8 @@ justify-content: center;
   }
 >>>>>>> efc3f04d2e49ced9876f4d57a21aa9ab8006f5f2
 }
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }

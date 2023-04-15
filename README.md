@@ -10,8 +10,11 @@
 * [**User Experience** ](#UX)
     * [**User Stories**](#User-Stories)
     * [**Wireframe** ](#Wireframe)
-
-* [**Technologies Used**](#Technologies-Used)
+    * [**Surface**](Surface)
+    * [**Features** ](#Features)
+   * [**Existing Features**](#Existing-Features)
+   * [**Features Left to Implement**](#Features-Nice To Have)
+   * [**Technologies Used**](#Technologies-Used)
     * [**Frameworks and libraries used in the project**](#Frameworks-and-libraries-used-in-the-project)
 * [ **Testing**](#Testing)
 * [ **Deployment**](#Deployment)
@@ -24,7 +27,8 @@
 ---
 # Project Demo Page
 
- [Screen image](static/images/Screendemo.jpg)
+ ![Screen image](static/images/Screendemo.jpg)
+ 
 
 [**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)
 
@@ -112,6 +116,10 @@ The planning and development of this project is divided into 5 planes:
     - A footer with social media links is featured at the bottom to allow users to easily connect with socials.
 
 # Wireframes
+
+ ![Wireframe Skeleton](static/images/SkeletonPage.png)
+
+
 We have created mockup screens of the webpage functionalities using Balsamic Software tool.
 The initial draft of the wireframe was based on how user can navigate each page on the site however, the final product might be different due to team design thinking improvement.
 
@@ -127,6 +135,20 @@ The initial draft of the wireframe was based on how user can navigate each page 
 * [**Mobile login page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Login.png)
 * [**Mobile logout page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Logout.png)
 * [**Veterans profile page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Veterans%20profile%20page%20.png)
+
+## **Surface**
+
+### Design
+
+The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop, laptop, tablet to mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
+
+### Typography
+
+We have used Oswald Heavy fonts for headings and Merriweather  for Paragraph
+
+The website is fully responsive across all devices with the help of CSS styling and media queries to custom font sizes (smaller for mobile devices) and styles to keep all the content in place and legible.
+
+## Colour Scheme.
 
 ## Technologies Used
 

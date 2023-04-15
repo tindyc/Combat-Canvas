@@ -1288,8 +1288,12 @@ footer h2 {
     padding: 0px 15px;
   }
 
-  /*Home Page*/
+ /*=======================
+    Home Page
+  ========================*/
+  
 .home-title {
+  font-family: 'Oswald', sans-serif;
   display: flex;
   justify-content: center;
   padding-top: 2%;
@@ -1306,9 +1310,38 @@ footer h2 {
 
 .home-description > p {
   text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.mental-health {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 5px;
+padding-bottom: 5px;
+text-align: center;
+}
+
+.mental-health img {
+  margin: auto;
+  max-width: 25%;
+  max-width: 25%;
+}
+
+.mental-health h3 {
+  font-family:  'Oswald', sans-serif;
+}
+
+.mental-health p {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .where-description {
+  font-family: 'Merriweather Sans', sans-serif;
   display: flex;
   flex-flow: row;
   padding: 0 30px;
@@ -1318,13 +1351,16 @@ footer h2 {
 
 .where-description h3 {
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 .where-description p {
 text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
 }
 
 .where-content {
+font-family: 'Merriweather Sans', sans-serif;
 justify-content: right;
 margin-left: 5%;
 margin-right: 10%;
@@ -1339,15 +1375,25 @@ margin-right: 10%;
 }
 
 .user-quote1 {
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: left;
   background-color: aliceblue;
   flex-basis: 30%;
 }
 
 .user-quote2 {
+  font-family: 'Merriweather Sans', sans-serif;
   text-align: left;
   background-color: aliceblue;
   flex-basis: 30%;
+}
+
+.user-quote1 p {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.user-quote2 p {
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 .content-img1 {
@@ -1367,6 +1413,10 @@ display: flex;
 justify-content: center;
 }
 
+.projects-button-description p {
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
 /*Media Queries for the home page*/
 
 @media screen and (max-width: 400px) {
@@ -1375,9 +1425,16 @@ justify-content: center;
   padding-right: 20px;
 }
 
+.mental-health img {
+  margin: auto;
+  max-width: 50%;
+  max-width: 80%;
+}
+
   .where-description {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+  padding-bottom: 30px;
 }
 
 .home-contents-container {
@@ -1406,9 +1463,17 @@ justify-content: center;
     padding-right: 20px;
   }
   
+  .mental-health img {
+    margin: auto;
+    max-width: 50%;
+    max-width: 80%;
+    padding-top: 20px;
+  }
+  
     .where-description {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
   }
   
   .home-contents-container {
@@ -1420,6 +1485,7 @@ justify-content: center;
     max-width: 50%;
     max-width: 80%;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   
   .content-img2 {

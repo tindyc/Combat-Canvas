@@ -10,7 +10,8 @@
         <div class="column column--1of3">
           <div class="card text-center">
             <div class="card__body user">
-              <a class="tag tag--pill tag--main settings__btn" href="{% url 'edit-account' %}"><i class="im im-edit"></i>
+              <a class="tag tag--pill tag--main settings__btn" href="{% url 'edit-account' %}"><i
+                  class="im im-edit"></i>
                 Edit</a>
               <img class="avatar avatar--xl user__avatar" src="{{profile.imageURL}}" />
               <h2 class="user__name  account-mobile-mode">{{profile.name}}</h2>
@@ -21,19 +22,22 @@
 
                 {% if profile.social_twitter %}
                 <li>
-                    <a title="Twitter" href="{{profile.social_twitter}}" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                  <a title="Twitter" href="{{profile.social_twitter}}" target="_blank"><i
+                      class="fa-brands fa-twitter"></i></a>
                 </li>
                 {% endif %}
 
                 {% if profile.social_linkedin %}
                 <li>
-                    <a title="LinkedIn" href="{{profile.social_linkedin}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  <a title="LinkedIn" href="{{profile.social_linkedin}}" target="_blank"><i
+                      class="fab fa-linkedin-in"></i></a>
                 </li>
                 {% endif %}
 
                 {% if profile.social_website %}
                 <li>
-                    <a title="Personal Website" href="{{profile.social_website}}" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                  <a title="Personal Website" href="{{profile.social_website}}" target="_blank"><i
+                      class="fa-solid fa-globe"></i></a>
                 </li>
                 {% endif %}
 
@@ -53,8 +57,8 @@
       <div class="account-projects-con">
         <div class="settings">
           <h2 class="settings__title">Projects</h2>
-          <a class="tag tag--pill tag--sub settings__btn tag--lg" href="{% url 'create-project' %}"><i
-              class="im im-plus"></i> Add Project</a>
+          <button class="btn btn--sub">
+            <a href="{% url 'create-project' %}"><i class="im im-plus"></i> Add Project</a></button>
         </div>
         <div class="my-projects-container">
           {% for project in projects %}
@@ -63,11 +67,14 @@
             <div class="project-card-info">
               <a href="{% url 'project' project.id %}"><img src="{{project.imageURL}}" alt="Project Thumbnail" /></a>
               <p>{{project.description|slice:"150"}}</p>
-                <a class="tag tag--pill tag--main settings__btn" href="{% url 'update-project' project.id %}"><i
-                    class="im im-edit"></i> Edit</a>
-                <a class="tag tag--pill tag--main settings__btn"
-                  href="{% url 'delete-project'  project.id %}?next=/account"><i class="im im-x-mark-circle-o"></i>
-                  Delete</a>
+              <button class="btn btn--sub">
+                <a href="{% url 'update-project' project.id %}"><i class="im im-edit"></i> Edit</a>
+              </button>
+              <br>
+              <button class="btn btn--sub">
+              <a href="{% url 'delete-project'  project.id %}?next=/account"><i class="im im-x-mark-circle-o"></i>
+                Delete</a>
+              </button>
             </div>
           </div>
           {% endfor %}

@@ -86,7 +86,7 @@
     display: inline-flex;
     align-items: center;
     list-style: none;
-    gap: 6.5rem;
+    gap: 3rem;
   }
   
   .header__menuItem > a {
@@ -1575,3 +1575,22 @@ justify-content: center;
 
 }
 
+/*=======================
+    How Section
+  ========================*/
+  .how h1 {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .how ol {
+    font-size: medium;
+  }
+
+  .how img {
+    max-height: 600px;
+    width: auto;
+  }
+
+  .how h2 {
+    font-family: 'Oswald', sans-serif;
+  }

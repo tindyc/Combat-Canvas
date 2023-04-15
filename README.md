@@ -22,6 +22,11 @@
  * [**Disclaimer Warning**](#Disclaimer-Warning)
 
 ---
+# Project Demo Page
+
+ [Screen image](static/images/Screendemo.jpg)
+
+[**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)
 
 ## Project Brief
 Code Institute London Hackathon project in conjuction with SODA Social and in partnership with Ex-Military Careers.COM ,came up with the initiative *supporting Veterans Mental Health*.
@@ -63,11 +68,26 @@ The planning and development of this project is divided into 5 planes:
 
 # User Stories
 
--   As a Veteran, I would like to navigate the art gallery to see the art work.
+-  As a veteran, i should be able to login, create and save profile picture  of myself so i can easily identify the authentcity of my page.
 
--   As a Veteran, I would like to be able to navigate to desired sections and opens picture.
+-  As a Veteran, I would like to navigate the art gallery to see the art 
+    work.
+ 
+- As Veteran, I should be able to navigate on all the links on the page  to see contents that might be of interest. 
 
--   As a Veteran , I would like to easily access resources and  help guidance.
+-   As a Veteran, I should be able to use the site  to easily access resources and  help guidance.
+
+- As a veteran  with no previous access to art therapy i should be able to 
+  search for help  on the Combat Canvas page so i can get help with calming influence therapy.
+
+- As a veteran struggling with loneliness, i should be able to use the  
+  website to engage with new community to start a new hubby to improve my emotions.
+
+- As an ex-military veteran with anger and depression, i should be able to  
+  use the Combat Canvas page to search for services that can provide 
+  rehabiliation sessions
+ 
+
 
 ## **Scope Plane**
 

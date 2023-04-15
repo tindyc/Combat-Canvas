@@ -13,7 +13,7 @@
     * [**Surface**](Surface)
     * [**Features** ](#Features)
    * [**Existing Features**](#Existing-Features)
-   * [**Features Left to Implement**](#Features-Nice To Have)
+   * [**Future Features**](#Future-features)
    * [**Technologies Used**](#Technologies-Used)
     * [**Frameworks and libraries used in the project**](#Frameworks-and-libraries-used-in-the-project)
 * [ **Testing**](#Testing)
@@ -33,22 +33,22 @@
 [**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)
 
 ## Project Brief
-Code Institute London Hackathon project in conjuction with SODA Social and in partnership with Ex-Military Careers.COM ,came up with the initiative *supporting Veterans Mental Health*.
+Code Institute London Hackathon project in conjuction with SODA Social and in partnership with ex-militarycareers.com came up with the initiative *Supporting Veterans' Mental Health*.
 
-My team has chosen *The ART THERAPY GALLERY:A platform where veterans can submit and showcase their creativity work*.
-   we believe that mental health  awareness is vital amongst VETERANS , their is overbearing stigma surrounding mental health with lack of educationa resources and the  society so many are left aliented . This project is dedicated to  help create a space for veterans  to express themselves and hope this will help to reduce the sitgam and promote cathartic therapy that ART can offer.
+The team has chosen *The ART THERAPY GALLERY: A platform where veterans can submit and showcase their creative work*.
+   We believe that mental health  awareness is vital amongst veterans. There is overbearing stigma surrounding mental health with lack of educational resources and so many are left aliented in society. This project is dedicated to  help create a space for veterans to express themselves through therapeutic art, and we hope this will help to reduce the stigma and promote cathartic therapy that art can offer.
 
-  This project is  also an opportunity for CI students to brainstorm and also to use their coding skills to develop apps and websites to support the veterans activities such as Wellness tracker, Veterans stories and other Mental health resources.
+  This project is also an opportunity for CI students to brainstorm and also to use their coding skills to develop apps and websites to support the veterans activities such as Wellness tracker, Veterans stories and other Mental health resources.
 
- In preparing for this project we have conducted research on some veterans websites and also partictipated in the *SODA* webinar with some veterans at present. This gave us more insights on what to develop for the project. 
+ In preparing for this project we have conducted research on some veterans websites and also partictipated in the *SODA* webinar with some veterans present. This gave us more insights on what to develop for the project. 
 
-The team has created Art work of Gallery to show case the veterans work. We have used Django and Python programming skills to develop the webpages and incorporated CRUD functionality (Create,Read,Update and Delete). Team has worked in Sprints using Agile methodology to deliver the project.
+The team has created a gallery to showcase the veterans' work. We have used Django and Python programming skills to develop the webpages and incorporated CRUD functionality (Create, Read, Update and Delete). Team has worked in sprints using Agile methodology to deliver the project.
 
 ## User Experience
 
-In this section, We are going to provide insights into  UX process, mainly focusing on the ART THERAPY GALLERY  which is what this application is built for and  what it intent to achieve and how Veterans can best utilise this web application to fulfil their needs.
+In this section, We are going to provide insights into the UX process, mainly focusing on the art therapy gallery which is what this application is built for, what it intends to achieve and how veterans can best utilise this web application to fulfil their needs.
 
-The webpage contents and functionality has been developed with user interface and aesthetics focus in mind based on the user type(Veterans).
+The webpage contents and functionality has been developed with user interface and aesthetics in mind, catered to our demographic.
 
 According to Caglar Araz from UX Collective, User Experience (UX) is "User experience refers to the singular and accumulated experiences that occur for users as a consequence of them interacting with an object in a given context."
 
@@ -65,10 +65,13 @@ The planning and development of this project is divided into 5 planes:
 
 ### Creator Goals
 
-- To create an interactive web application that is fully responsive on desktop to smaller devices such as mobile and Tablet
+- Our website is designed to bring veterans together through art.
 
--  To create a website with interface design, presenting a logical structure allowing users(Veterans) to easily navigate.
+- At Combat Canvas users can not only veiw art, but be encouraged to create projects themselves.
 
+- Using the site's log in feature users can create a profile and upload their own creations and comment on each others' to encourage them.
+
+- The site aims to be responsive to all devices, and accessible to keyboard only users and users with visual impariments.
 
 # User Stories
 
@@ -163,13 +166,11 @@ The initial draft of the wireframe was based on how user can navigate each page 
 
 ### Design
 
-The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop, laptop, tablet to mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
+The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop and laptop, to tablet and mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
 
 ### Typography
 
-We have used Oswald Heavy fonts for headings and Merriweather  for Paragraph
-
-The website is fully responsive across all devices with the help of CSS styling and media queries to custom font sizes (smaller for mobile devices) and styles to keep all the content in place and legible.
+We have used Oswald Heavy fonts for headings and Merriweather for Paragraph
 
 ## Colour Scheme.
 
@@ -184,8 +185,10 @@ The website is fully responsive across all devices with the help of CSS styling 
 
 ## Testing
 -------------
-Testing was done within the team.The purpose of testing is to verify no broken links and all navigation pages opens up.
- Also validated the user friendliness of the site to conform with user experience design.
+Testing was done within the team.
+
+Also validated the user friendliness of the site to conform with user experience design.
+
 All the functional requirements met the acceptance criteria set up by the team.
 
 ## **DATABASE DESIGN**

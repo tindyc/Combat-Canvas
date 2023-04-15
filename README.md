@@ -10,8 +10,11 @@
 * [**User Experience** ](#UX)
     * [**User Stories**](#User-Stories)
     * [**Wireframe** ](#Wireframe)
-
-* [**Technologies Used**](#Technologies-Used)
+    * [**Surface**](Surface)
+    * [**Features** ](#Features)
+   * [**Existing Features**](#Existing-Features)
+   * [**Features Left to Implement**](#Features-Nice To Have)
+   * [**Technologies Used**](#Technologies-Used)
     * [**Frameworks and libraries used in the project**](#Frameworks-and-libraries-used-in-the-project)
 * [ **Testing**](#Testing)
 * [ **Deployment**](#Deployment)
@@ -24,7 +27,8 @@
 ---
 # Project Demo Page
 
- [Screen image](static/images/Screendemo.jpg)
+ ![Screen image](static/images/Screendemo.jpg)
+ 
 
 [**Project  Live Demo Page**](https://combat-canvas-production.up.railway.app/)
 
@@ -87,6 +91,29 @@ The planning and development of this project is divided into 5 planes:
   use the Combat Canvas page to search for services that can provide 
   rehabiliation sessions
  
+# Features 
+
+The site allows users to register for an account, view other users projects and interact with the online community. Registered users are able to login/logout and to create and update their own profiles and save their work to the online gallery page. Website users are able to view artwork and profiles and the contents of the webpage. Registered users are able to upload projects and leave comments. Admin is able to add, edit or delete the users projects, and its comments. Users are able to delete their own projects and edit their account information. 
+CRUD Functionality
+
+Home page: 
+•	Clickable button to direct to gallery page
+
+Login page:
+•	Log in 
+•	Log out 
+•	Add profile
+
+User Page:
+•	Delete profiles
+•	Upload project
+•	Delete project 
+•	Edit comments
+•	Delete comments
+
+Veterans page:
+•	Add comments
+•	Send message through contact form 
 
 
 ## **Scope Plane**
@@ -112,6 +139,10 @@ The planning and development of this project is divided into 5 planes:
     - A footer with social media links is featured at the bottom to allow users to easily connect with socials.
 
 # Wireframes
+
+ ![Wireframe Skeleton](static/images/SkeletonPage.png)
+
+
 We have created mockup screens of the webpage functionalities using Balsamic Software tool.
 The initial draft of the wireframe was based on how user can navigate each page on the site however, the final product might be different due to team design thinking improvement.
 
@@ -127,6 +158,20 @@ The initial draft of the wireframe was based on how user can navigate each page 
 * [**Mobile login page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Login.png)
 * [**Mobile logout page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Mobile%20Logout.png)
 * [**Veterans profile page**](https://github.com/daat2/Combat-Canvas/blob/main/static/wireframe/Veterans%20profile%20page%20.png)
+
+## **Surface**
+
+### Design
+
+The website has been designed with a good user look and feel with minimal color distraction. All the fonts and styles are consistent throughout the site to make the users feel comfortable. With the help of CSS styles and media queries, the site is responsive across devices from desktop, laptop, tablet to mobile. Even on smaller devices, the contents are aligned proportionally and styled to make sure they are still legible and well-displayed. Altogether, the design and layout of the site should be entertaining and captivating so that a user is able to understand and enjoy the site.
+
+### Typography
+
+We have used Oswald Heavy fonts for headings and Merriweather  for Paragraph
+
+The website is fully responsive across all devices with the help of CSS styling and media queries to custom font sizes (smaller for mobile devices) and styles to keep all the content in place and legible.
+
+## Colour Scheme.
 
 ## Technologies Used
 
@@ -144,6 +189,44 @@ Testing was done within the team.The purpose of testing is to verify no broken l
 All the functional requirements met the acceptance criteria set up by the team.
 
 ## Deployment
+
+### Application Hosting
+### **Railway.app**
+
+The site is hosted using [Railway](https://railway.app/), deployed directly from the main branch of GitHub. The deployed site will update automatically as new commits are pushed to the master branch.
+
+#### Creating a Railway app
+- From the Railway.app dashboard:
+  - Select “New Project"
+  - Select “Deploy from Github repo"
+
+#### Setting Environmental Variables
+- From the Railway dashboard:
+  - Select your app from the list
+  - Select "Variables" from the menu
+  - Add environment variables in key-value pairs, click "Add" to add additional pairings.
+
+#### Deployment
+- Create required deployment files in the repository:
+  - requirements.txt
+      - Lists the required python modules for Railway.app to install.
+    - To create:
+      - In your IDE terminal, type: ``pip freeze > requirements.txt``
+
+  - Procfile
+      -  Tell Railway.app the command to launch the app.
+	''web: python manage.py migrate && gunicorn CombatCanvas.wsgi''
+
+  - runtime.txt
+      -  Tell Railway.app the version of python used in the project.
+	''python-3.9.6''
+
+  - .gitignore (optional)
+      - Lists files and directories which should be deployed to live app, such as files with environmental passkeys.
+    - To create:
+      - In your IDE terminal, type: ``touch .gitignore``
+      - List the files and directories to be excluded from live deployment, within the .gitignore file.
+      - Save in your repository root directory.
 
 
 The working websites has been deployed  

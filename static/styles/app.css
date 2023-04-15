@@ -255,7 +255,7 @@
     height: 40vh;
     display: flex;
     align-items: center;
-    background-color: var(--color-sub-lighter);
+    background-color: rgba(240, 248, 255, 0.9);
   }
   
   .hero-section__box {

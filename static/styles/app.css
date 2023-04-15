@@ -517,7 +517,7 @@
   /*========== Projects ==========*/
   
   .project__thumbnail {
-    height: 25rem;
+    height: 34rem;
     object-fit: cover;
     object-position: top center;
   }
@@ -771,6 +771,80 @@
 
   @media screen and (max-width: 767px) {
     .single-project-info {
+      flex-direction: column;
+    }
+  }
+
+  /*=======================
+    Browse Profile Page
+  ========================*/
+
+  .profile-browse-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-browse-heading {
+    font-size: 4em;
+    font-family: 'oswald', sans-serif;
+  }
+
+  .profile-browse-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .profile-browse-user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-browse-user-img {
+    margin: 2rem 0;
+  }
+
+  .profile-browse-bio {
+    padding: 2rem 2.5rem;
+  }
+
+  .profile-browse-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-browse-project-head {
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .profile-browse-project-card, .profile-browse-project-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-browse-project-card a h3 {
+    text-decoration: none;
+  }
+
+  .profile-browse-project-card a img {
+    margin: 2rem 0;
+    max-height: 34em;
+  }
+
+  /*=======================
+    Media Styles for Browse Profile
+  ========================*/
+
+  @media screen and (max-width: 767px) {
+    .profile-browse-top {
       flex-direction: column;
     }
   }

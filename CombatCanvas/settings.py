@@ -142,6 +142,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-h3yl4utsqhi.ws-eu94.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-tindyc-combatcanvas-npxs2kaskn7.ws-eu94.gitpod.io']
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_EMAIL_VERIFICATION = "none"

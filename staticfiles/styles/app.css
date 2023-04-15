@@ -561,7 +561,7 @@
   /*========== Projects ==========*/
   
   .project__thumbnail {
-    height: 34rem;
+    height: 25rem;
     object-fit: cover;
     object-position: top center;
   }
@@ -787,7 +787,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
   }
 
   .single-project-about {
@@ -810,116 +809,12 @@
     align-items: center;
   }
 
-  .single-project-comments {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .single-project-comments-title {
-    font-size: 3em;
-    text-align: center;
-  }
-
-  .single-project-comments form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .form__field {
-    width: 100%;
-    font-size: 1.5em
-  }
-
-  .single-project-comment-submit {
-    background-color: #93A1C8;
-    border-radius: 5px;
-    border: black solid 1px;
-    font-size: 1.5em;
-    padding: 2px 7px;
-  }
-
   /*=======================
     Media Styles for Single Project
   ========================*/
 
   @media screen and (max-width: 767px) {
     .single-project-info {
-      flex-direction: column;
-    }
-  }
-
-  /*=======================
-    Browse Profile Page
-  ========================*/
-
-  .profile-browse-con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-browse-heading {
-    font-size: 4em;
-    font-family: 'oswald', sans-serif;
-  }
-
-  .profile-browse-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .profile-browse-user-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-browse-user-img {
-    margin: 2rem 0;
-  }
-
-  .profile-browse-bio {
-    padding: 2rem 2.5rem;
-  }
-
-  .profile-browse-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-browse-project-head {
-    font-size: 3em;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .profile-browse-project-card, .profile-browse-project-card a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-browse-project-card a h3 {
-    text-decoration: none;
-  }
-
-  .profile-browse-project-card a img {
-    margin: 2rem 0;
-    max-height: 34em;
-  }
-
-  /*=======================
-    Media Styles for Browse Profile
-  ========================*/
-
-  @media screen and (max-width: 767px) {
-    .profile-browse-top {
       flex-direction: column;
     }
   }
@@ -1011,28 +906,35 @@
   legend {
     margin-bottom: 10px;
     text-align: center;
-    margin-top: 10px;
-    font-weight: 700;
 }
 
-#contact-form-logo {
-    width: 50%;
-    margin: auto;
+.form-container-mid {    
+    display: flex;
+    justify-content: center;    
 }
 
-.contact-form {
+.form-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;   
+}
+
+.contact-form {    
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    font-size: 1.5rem;
+    flex-basis: 30%;
+    font-weight: 600;
+    border-radius: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
+    /* color: #1B264F; */
 }
 
 .form-control {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
-    margin: auto;
+    flex: 1;    
 }
 
 .form-control input {
@@ -1062,19 +964,17 @@
     background-color: #1B264F;
     color: #F5F3F5;
     padding: 5px 15px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    font-weight: 600;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2 );
 }
 
 #required-field-bottom {
     margin-top: 5px;
     font-size: 70%;
-    color: var(--color-text);
 }
 
-@media screen and (max-width:1024px) {
-    .auth>.card {
-        flex-basis: 60%;
+@media screen and (max-width:400px) {
+    .contact-form {
+        flex-basis: 100%;
     }
 }
 
@@ -1261,26 +1161,7 @@ footer h2 {
     font-size: 4rem;
     text-align: center;
     padding-top: 1.5rem;
-
-}
-
-.footer-center {
-    text-align: center;
-}
-
-#footer-logo {
-    padding-top: 1.5rem;
-    max-width: 250px;
-}
-
-#disclaimer {
-    font-size: 1.2rem;
-    color: #161412;
-}
-
-.github-icons {
-    font-size: 3rem;
-    padding: 0px 15px;
+    
   }
 
   .footer-center {
@@ -1302,12 +1183,8 @@ footer h2 {
     padding: 0px 15px;
   }
 
- /*=======================
-    Home Page
-  ========================*/
-  
+  /*Home Page*/
 .home-title {
-  font-family: 'Oswald', sans-serif;
   display: flex;
   justify-content: center;
   padding-top: 2%;
@@ -1324,38 +1201,9 @@ footer h2 {
 
 .home-description > p {
   text-align: center;
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-.mental-health {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 5px;
-padding-bottom: 5px;
-text-align: center;
-}
-
-.mental-health img {
-  margin: auto;
-  max-width: 25%;
-  max-width: 25%;
-}
-
-.mental-health h3 {
-  font-family:  'Oswald', sans-serif;
-}
-
-.mental-health p {
-  font-family: 'Merriweather Sans', sans-serif;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .where-description {
-  font-family: 'Merriweather Sans', sans-serif;
   display: flex;
   flex-flow: row;
   padding: 0 30px;
@@ -1365,16 +1213,13 @@ text-align: center;
 
 .where-description h3 {
   text-align: center;
-  font-family: 'Oswald', sans-serif;
 }
 
 .where-description p {
 text-align: center;
-font-family: 'Merriweather Sans', sans-serif;
 }
 
 .where-content {
-font-family: 'Merriweather Sans', sans-serif;
 justify-content: right;
 margin-left: 5%;
 margin-right: 10%;
@@ -1389,25 +1234,15 @@ margin-right: 10%;
 }
 
 .user-quote1 {
-  font-family: 'Merriweather Sans', sans-serif;
   text-align: left;
   background-color: aliceblue;
   flex-basis: 30%;
 }
 
 .user-quote2 {
-  font-family: 'Merriweather Sans', sans-serif;
   text-align: left;
   background-color: aliceblue;
   flex-basis: 30%;
-}
-
-.user-quote1 p {
-  font-family: 'Merriweather Sans', sans-serif;
-}
-
-.user-quote2 p {
-  font-family: 'Merriweather Sans', sans-serif;
 }
 
 .content-img1 {
@@ -1427,10 +1262,6 @@ display: flex;
 justify-content: center;
 }
 
-.projects-button-description p {
-  text-align: center;
-  font-family: 'Merriweather Sans', sans-serif;
-}
 /*Media Queries for the home page*/
 
 @media screen and (max-width: 400px) {
@@ -1439,16 +1270,9 @@ justify-content: center;
   padding-right: 20px;
 }
 
-.mental-health img {
-  margin: auto;
-  max-width: 50%;
-  max-width: 80%;
-}
-
   .where-description {
   display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 30px;
+  flex-direction: column;
 }
 
 .home-contents-container {
@@ -1477,17 +1301,9 @@ justify-content: center;
     padding-right: 20px;
   }
   
-  .mental-health img {
-    margin: auto;
-    max-width: 50%;
-    max-width: 80%;
-    padding-top: 20px;
-  }
-  
     .where-description {
     display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 10px;
+    flex-direction: column;
   }
   
   .home-contents-container {
@@ -1499,7 +1315,6 @@ justify-content: center;
     max-width: 50%;
     max-width: 80%;
     padding-bottom: 20px;
-    padding-top: 20px;
   }
   
   .content-img2 {
@@ -1510,3 +1325,4 @@ justify-content: center;
     padding-bottom: 20px;
   }
 }
+

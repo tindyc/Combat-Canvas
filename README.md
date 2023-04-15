@@ -167,6 +167,44 @@ All the functional requirements met the acceptance criteria set up by the team.
 
 ## Deployment
 
+### Application Hosting
+### **Railway.app**
+
+The site is hosted using [Railway](https://railway.app/), deployed directly from the main branch of GitHub. The deployed site will update automatically as new commits are pushed to the master branch.
+
+#### Creating a Railway app
+- From the Railway.app dashboard:
+  - Select “New Project"
+  - Select “Deploy from Github repo"
+
+#### Setting Environmental Variables
+- From the Railway dashboard:
+  - Select your app from the list
+  - Select "Variables" from the menu
+  - Add environment variables in key-value pairs, click "Add" to add additional pairings.
+
+#### Deployment
+- Create required deployment files in the repository:
+  - requirements.txt
+      - Lists the required python modules for Railway.app to install.
+    - To create:
+      - In your IDE terminal, type: ``pip freeze > requirements.txt``
+
+  - Procfile
+      -  Tell Railway.app the command to launch the app.
+	''web: python manage.py migrate && gunicorn CombatCanvas.wsgi''
+
+  - runtime.txt
+      -  Tell Railway.app the version of python used in the project.
+	''python-3.9.6''
+
+  - .gitignore (optional)
+      - Lists files and directories which should be deployed to live app, such as files with environmental passkeys.
+    - To create:
+      - In your IDE terminal, type: ``touch .gitignore``
+      - List the files and directories to be excluded from live deployment, within the .gitignore file.
+      - Save in your repository root directory.
+
 
 The working websites has been deployed  
 

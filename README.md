@@ -91,6 +91,29 @@ The planning and development of this project is divided into 5 planes:
   use the Combat Canvas page to search for services that can provide 
   rehabiliation sessions
  
+# Features 
+
+The site allows users to register for an account, view other users projects and interact with the online community. Registered users are able to login/logout and to create and update their own profiles and save their work to the online gallery page. Website users are able to view artwork and profiles and the contents of the webpage. Registered users are able to upload projects and leave comments. Admin is able to add, edit or delete the users projects, and its comments. Users are able to delete their own projects and edit their account information. 
+CRUD Functionality
+
+Home page: 
+•	Clickable button to direct to gallery page
+
+Login page:
+•	Log in 
+•	Log out 
+•	Add profile
+
+User Page:
+•	Delete profiles
+•	Upload project
+•	Delete project 
+•	Edit comments
+•	Delete comments
+
+Veterans page:
+•	Add comments
+•	Send message through contact form 
 
 
 ## **Scope Plane**

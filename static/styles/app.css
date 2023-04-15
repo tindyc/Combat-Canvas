@@ -889,26 +889,9 @@ legend {
     font-weight: 700;
 }
 
-
 #contact-form-logo {
     width: 50%;
     margin: auto;
-}
-
-.contact-form-container-outer {
-    margin: 75px 0;
-}
-
-.contact-form-container-inner {
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form-container {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    flex-basis: 30%;
 }
 
 .contact-form {
@@ -918,12 +901,6 @@ legend {
     flex: 1;
     font-size: 1.5rem;
 }
-
-.form__field > label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: var(--color-text);
-  }
 
 .contact-form-control {
     display: flex;
